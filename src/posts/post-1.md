@@ -1,0 +1,11 @@
+---
+title: Afternoon Hack
+template: post.html
+date: 2015-09-29
+description: Afternoon Hack Blog post
+author: Ketil Jensen
+tags: blah, nodejs, static site, metalsmith
+---
+
+Last Thursday we arranged our very first hack day at TeliaSonera. The event was attended by 15 people, forming 5 different teams. Snacks and drinks were on the house. Pizza was served to the hungry late stayers. But most importantly: During the day we saw many good ideas shape up and worked on. A passionate group worked hard throughout the day. Some working on internal tools, other groups on customer facing products and new concepts. The results were presented at 9 AM the morning after. And after a vote later in the afternoon, we could announce two "winners". The attendees reported back that they really enjoyed our afternoon-hack event, so we will definitely do more of that in the future.
+
