@@ -1,29 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 30 Sep 2015 14:50:48 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Afternoon-hack]]></title><description><![CDATA[<p>Last Thursday we arranged our very first hack day at TeliaSonera. The event was attended by 15 people, forming 5 different teams. Snacks and drinks were on the house. Pizza was served to the hungry late stayers. But most importantly: During the day we saw many good ideas shape up and worked on. A passionate group worked hard throughout the day. Some working on internal tools, other groups on customer facing products and new concepts. The results were presented at 9 AM the morning after. And after a vote later in the afternoon, we could announce two &quot;winners&quot;. The attendees reported back that they really enjoyed our afternoon-hack event, so we will definitely do more of that in the future.</p>
-<blockquote>
-  <p>
-    I have not failed. I&#39;ve just found 10,000 ways that won&#39;t work.
-  </p>
-  <footer><cite title="Thomas A. Edison">Thomas A. Edison</cite></footer>
-</blockquote>
-
-<h3 id="why-are-we-doing-it-">Why are we doing it?</h3>
-<p>First and foremost: To learn! If TS is going to stay competetive in the Telco market, then we need to learn faster than our competitors. We know we need to find new products and services to attract new customers and retain those that we already have. To do that we think we need to do at least 2 things:</p>
-<ul>
-<li>Create an environment where experimentation and learning can happen</li>
-<li>Run experiments</li>
-</ul>
-<p>In a hectic work day it is not realistic to think that people will be able to create time and space to innovate. At least not in the short run. Thus, we need to change the envioronment.  Our hypothesis was that a hack day (or a half hack day), could be such a learning environment. After the first experiment we still believe that, but we need to run more experiments to  further improve. Other reasons to arrange a hack day:</p>
-<ul>
-<li>Have fun</li>
-<li>Socialize</li>
-<li>Learn new skills</li>
-</ul>
-<p>to name but a few.</p>
-<h3 id="what-is-a-hack-day-">What is a Hack day?</h3>
-<p>A hack day is a timeboxed event where people meet to work on ideas they have for a new product, play around with new technology, together with other people. This creates an environment where people can focus on developing an idea they have without all the interferences that people normally have in their daily job. </p>
-<p>A hack day normally lasts a full day, from morning to afternoon/evening. To start small we decided that our first experiment should be a bit shorter, starting from lunch and lasting to whenever people needed to leave. Starting with a short event made it not only easier for people to attend, but also to get buy-in from management. </p>
-]]></description><link>http://teliasonera.github.io/blog/afternoon-hack</link><guid isPermaLink="true">http://teliasonera.github.io/blog/afternoon-hack</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Tue, 29 Sep 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Creating a new blog]]></title><description><![CDATA[<p>There is a  amount of subtle, yet precisely calibrated, styling to ensure
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 30 Sep 2015 16:07:55 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Creating a new blog]]></title><description><![CDATA[<p>There is a  amount of subtle, yet precisely calibrated, styling to ensure
 that your content is emphasized while still looking aesthetically pleasing.</p>
 <p>All links are easy to <a href="#">locate and discern</a>, yet don&#39;t detract from the harmony
 of a paragraph. The <em>same</em> goes for italics and <strong>bold</strong> elements. Even the the strikeout
@@ -85,4 +61,84 @@ hopefully sidestep this inconvenience.</p>
 <p>Checkout the <a href="https://github.com/johnotander/pixyll">Github repository</a> to request,
 or add, features.</p>
 <p>Happy writing.</p>
-]]></description><link>http://teliasonera.github.io/blog/creating-a-new-blog</link><guid isPermaLink="true">http://teliasonera.github.io/blog/creating-a-new-blog</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Tue, 29 Sep 2015 00:00:00 GMT</pubDate></item></channel></rss>
+]]></description><link>http://teliasonera.github.io/blog/creating-a-new-blog</link><guid isPermaLink="true">http://teliasonera.github.io/blog/creating-a-new-blog</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Tue, 29 Sep 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Afternoon-hack]]></title><description><![CDATA[<p>Last Thursday we arranged our very first hack day at TeliaSonera. The event was attended by 15 people, forming 5 different teams. Snacks and drinks were on the house. Pizza was served to the hungry late stayers. But most importantly: During the day we saw many good ideas shape up and worked on. A passionate group worked hard throughout the day. Some working on internal tools, other groups on customer facing products and new concepts. The results were presented at 9 AM the morning after. And after a vote later in the afternoon, we could announce two &quot;winners&quot;. The attendees reported back that they really enjoyed our afternoon-hack event, so we will definitely do more of that in the future.</p>
+<blockquote>
+  <p>
+    I have not failed. I&#39;ve just found 10,000 ways that won&#39;t work.
+  </p>
+  <footer><cite title="Thomas A. Edison">Thomas A. Edison</cite></footer>
+</blockquote>
+
+<h3 id="why-are-we-doing-it-">Why are we doing it?</h3>
+<p>First and foremost: To learn! If TS is going to stay competetive in the Telco market, then we need to learn faster than our competitors. We know we need to find new products and services to attract new customers and retain those that we already have. To do that we think we need to do at least 2 things:</p>
+<ul>
+<li>Create an environment where experimentation and learning can happen</li>
+<li>Run experiments</li>
+</ul>
+<p>In a hectic work day it is not realistic to think that people will be able to create time and space to innovate. At least not in the short run. Thus, we need to change the envioronment.  Our hypothesis was that a hack day (or a half hack day), could be such a learning environment. After the first experiment we still believe that, but we need to run more experiments to  further improve. Other reasons to arrange a hack day:</p>
+<ul>
+<li>Have fun</li>
+<li>Socialize</li>
+<li>Learn new skills</li>
+</ul>
+<p>to name but a few.</p>
+<h3 id="what-is-a-hack-day-">What is a Hack day?</h3>
+<p>A hack day is a timeboxed event where people meet to work on ideas they have for a new product, play around with new technology, together with other people. This creates an environment where people can focus on developing an idea they have without all the interferences that people normally have in their daily job. </p>
+<p>A hack day normally lasts a full day, from morning to afternoon/evening. To start small we decided that our first experiment should be a bit shorter, starting from lunch and lasting to whenever people needed to leave. Starting with a short event made it not only easier for people to attend, but also to get buy-in from management. </p>
+<h3 id="show-us-what-you-ve-learned">Show us what you&#39;ve learned</h3>
+<p>Teams were challenged to present their hacks on the morning after, at 9AM. To keep things transparent and simple we decided to do the presentations in the open office space. Quite a few people got interested in what was going, and with some good presentations being made we managed to raise additional interest in our afternoon hack day. Next time we hope to have even more people joining. People has already started asking when our next event will take place. </p>
+<p>In the afternoon we invited everybody to vote for two winners; best customer facing product and best internal product. No fancy prizes, just the honors.</p>
+<p><img src="http://placehold.it/600x400" alt="Presentation of hacks"></p>
+<h3 id="what-we-learned-from-arranging-the-event-">What we learned from arranging the event?</h3>
+<p>We tried hard to keep our first event as simple as possible. That approach worked really well. The table below summarizes our key learnings from the event, tools and other learnings.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">What</th>
+<th style="text-align:left">How</th>
+<th style="text-align:center">Did it work?</th>
+<th style="text-align:left">Learning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Communication</td>
+<td style="text-align:left"><a href="http://slack.com">Slack</a></td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:left">Slack is awesome</td>
+</tr>
+<tr>
+<td style="text-align:left">Idea gathering</td>
+<td style="text-align:left"><a href="http://trello.com">Trello</a></td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:left">Invite broadly to get more ideas</td>
+</tr>
+<tr>
+<td style="text-align:left">Voting</td>
+<td style="text-align:left"><a href="http://trello.com">Trello</a></td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:left">You need Trello gold to enable voting</td>
+</tr>
+<tr>
+<td style="text-align:left">Registration</td>
+<td style="text-align:left"><a href="http://eventbrite.com">Eventbrite</a></td>
+<td style="text-align:center">No</td>
+<td style="text-align:left">Complicating things</td>
+</tr>
+<tr>
+<td style="text-align:left">Presentation</td>
+<td style="text-align:left">In open office area</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:left">Transparency is king</td>
+</tr>
+</tbody>
+</table>
+<p>Since we decided to do a shorter hack day for our first experiment, we accepted that teams presented concepts as hacks. In fact, the two winning teams did not have a potentially shippable product. Next time around, if we are doing a full hack day, we will focus more on getting some minimum products finished. </p>
+<blockquote>
+  <p>
+
+  </p>
+  <footer><cite title="Seth Godin">Seth Godin</cite></footer>
+</blockquote>
+
+]]></description><link>http://teliasonera.github.io/blog/afternoon-hack</link><guid isPermaLink="true">http://teliasonera.github.io/blog/afternoon-hack</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Tue, 29 Sep 2015 00:00:00 GMT</pubDate></item></channel></rss>
