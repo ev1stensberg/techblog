@@ -1,6 +1,5 @@
 ---
-title: Afternoon Hack
-draft: true
+title: Creating a new blog
 template: post.html
 date: 2015-09-29
 description: Afternoon Hack Blog post
