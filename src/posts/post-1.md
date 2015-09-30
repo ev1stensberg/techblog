@@ -57,7 +57,7 @@ Since we decided to do a shorter hack day for our first experiment, we accepted 
 
 <blockquote>
   <p>
-	
+	The only purpose of starting is to finish, and while the projects we do are never really finished, they must ship.  
   </p>
   <footer><cite title="Seth Godin">Seth Godin</cite></footer>
 </blockquote>
