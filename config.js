@@ -2,7 +2,7 @@ var config = {
   production: {
     baseUrl: process.env.BASE_URL || '', // '' for relative links
     site: {
-      url: process.env.SITE_URL || 'http://teliasonera.github.io', // full site url
+      url: process.env.SITE_URL || 'http://teliasonera.github.io/tech-blog', // full site url
       title: 'TeliaSonera TechBlog',
       googleAnalytics: process.env.GOOGLE_ANALYTICS || '123457'
     }
