@@ -29,7 +29,7 @@ In a hectic work day it is not realistic to think that people will be able to cr
 - Learn new skills
 - Get to know colleagues, also from other departments
 
-Although having fun and learning new skills is obviously very important (we believe in creating a work place where people can have fun), I want to especially emphasize the importance of the last point above. We believe that events like these can be a really great way to tear down some of the functional silos that exists in the organization, to create new relationships across departments. The first time around we had a few from the business side. Next time around we hope to get more people from lots of differents departments to attend: More people from the business side, marketing, sales, HR and so on. 
+Although having fun and learning new skills is obviously very important (we believe in creating a work place where people can have fun), I want to especially emphasize the importance of the last point above. We believe that events like these can be a really great way to __tear down some of the functional silos that exists in the organization__, to create new relationships across departments. The first time around we had a few from the business side. Next time around we hope to get more people from lots of differents departments to attend: More people from the business side, marketing, sales, HR and so on. 
 
 ### What is a Hack day?
 A hack day is a timeboxed event where people meet to work on ideas they have for a new product, play around with new technology, together with other people. This creates an environment where people can focus on developing an idea they have without all the interferences that people normally have in their daily job. 

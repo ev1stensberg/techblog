@@ -9,9 +9,6 @@
 
 {% if collections.posts.length > 0 %}
   <div class="posts">
-    <div class="post">
-      <h2>Recent Posts</h2>
-    </div>
     {% for post in collections.posts %}
       {% if loop.index <= 3 %}
       <div class="post">

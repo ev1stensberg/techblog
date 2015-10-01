@@ -1,5 +1,6 @@
 ---
 title: Creating a new blog
+draft: true
 template: post.html
 date: 2015-09-29
 description: Afternoon Hack Blog post
