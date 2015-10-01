@@ -8,6 +8,7 @@
     <span class="post-meta small">
     {% for tag in tags %}<a href="{{baseUrl}}/tags/{{tag | replace(' ', '-')}}" title="{{tag}}">{{tag}}</a>{% if !loop.last %}, {% endif %}{% endfor %}
     </span>
+    <img src="{{imgUrl}}" alt="bilde"/>
   </header>
   <article class="post-content py2">
   {{contents | safe}}
