@@ -16,7 +16,7 @@ var config = {
     }
   },
   social: {
-    github_username: '',
+    github_username: 'teliasonera',
     stackoverflow_id: '',
     twitter_username: '',
     google_plus_id: '',
