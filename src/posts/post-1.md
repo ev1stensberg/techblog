@@ -65,7 +65,4 @@ We tried hard to keep our first event as simple as possible. That approach worke
 
 Since we decided to do a shorter hack day for our first experiment, we accepted that teams presented concepts as hacks. In fact, the two winning teams did not have a potentially shippable product. Next time around, if we are doing a full hack day, we will focus more on getting some minimum products finished. 
 
-#### Update #### 
-People liked the Hack event so much that we have already set the date for our next one, this time a full day :) In 10 days!
-
 
