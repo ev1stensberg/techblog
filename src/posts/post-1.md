@@ -1,14 +1,14 @@
 ---
 title: Afternoon-hack
 template: post.html
-date: 2015-09-29
+date: 2015-10-19
 description: Afternoon Hack Blog post
 author: Ketil Jensen
 tags: hackday, agile, learning, product development
-imgUrl: http://placehold.it/600x400
+imgUrl: ../../images/hack-day-presentation-2.jpg
 ---
 
-Last Thursday we arranged our very first hack day at TeliaSonera. The event was attended by 15 people, forming 5 different teams. Snacks and drinks were on the house. Pizza was served to the hungry late stayers. But most importantly: During the day we saw many good ideas shape up and worked on. A passionate group worked hard throughout the day. Some working on internal tools, other groups on customer facing products and new concepts. The results were presented at 9 AM the morning after. And after a vote later in the afternoon, we could announce two "winners". The attendees reported back that they really enjoyed our afternoon-hack event, so we will definitely do more of that in the future.
+A few thursdays ago we arranged our very first hack day at TeliaSonera. The event was attended by 15 people, forming 5 different teams. Snacks and drinks were on the house. Pizza was served to the hungry late stayers. But most importantly: During the day we saw many good ideas shape up and worked on. A passionate group worked hard throughout the day. Some working on internal tools, other groups on customer facing products and new concepts. The results were presented at 9 AM the morning after. And after a vote later in the afternoon, we could announce two "winners". The attendees reported back that they really enjoyed our afternoon-hack event, so we will definitely do more of that in the future.
 
 <blockquote>
   <p>
@@ -50,7 +50,7 @@ Teams were challenged to present their hacks on the morning after, at 9AM. To ke
 
 In the afternoon we invited everybody to vote for two winners; best customer facing product and best internal product. No fancy prizes, just the honors.
 
-![Presentation of hacks](http://placehold.it/600x400)
+![Presentation of hacks]({{baseUrl}}/images/hack-day-presentation-1.jpg)
 
 ### What we learned from arranging the event?
 We tried hard to keep our first event as simple as possible. That approach worked really well. The table below summarizes our key learnings from the event, tools and other learnings.
@@ -64,5 +64,8 @@ We tried hard to keep our first event as simple as possible. That approach worke
 | Presentation	| In open office area | Yes | Transparency is king|
 
 Since we decided to do a shorter hack day for our first experiment, we accepted that teams presented concepts as hacks. In fact, the two winning teams did not have a potentially shippable product. Next time around, if we are doing a full hack day, we will focus more on getting some minimum products finished. 
+
+#### Update #### 
+People liked the Hack event so much that we have already set the date for our next one, this time a full day :) In 10 days!
 
 
