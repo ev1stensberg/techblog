@@ -2,37 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://teliasonera.github.io/tech-blog</loc>
-        <lastmod>2015-10-01</lastmod>
+        <lastmod>2015-10-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://teliasonera.github.io/projects</loc>
-        <lastmod>2015-09-30</lastmod>
+        <lastmod>2015-10-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://teliasonera.github.io/styleguide</loc>
-        <lastmod>2015-09-30</lastmod>
+        <lastmod>2015-10-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://teliasonera.github.io/blog/afternoon-hack</loc>
-        <lastmod>2015-10-19</lastmod>
+        <lastmod>2015-10-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://teliasonera.github.io/blog/upgrade-or-not-to-upgrade-the-eternal-dilemma</loc>
+        <lastmod>2015-10-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://teliasonera.github.io/blog/1/index.html</loc>
-        <lastmod>2015-10-19</lastmod>
+        <lastmod>2015-10-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://teliasonera.github.io/blog/index.html</loc>
-        <lastmod>2015-10-19</lastmod>
+        <lastmod>2015-10-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
