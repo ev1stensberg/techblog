@@ -38,7 +38,7 @@ wasn't frictionless either. It might require one or few hours (for proper
 testing and occasional troubleshooting) every week, a time we would have rather
 used on creating new value. And sometimes the upgrade did introduce problems -
 some spot and fixed immediately, but some taking more time to discover and fix.
-Once it took two weeks to find out that something broke due to `Redux` upgrade -
+Once it took two weeks to find out that something broke due to a `Reflux` upgrade -
 and finding out that the cause was the upgrade wasn't easy.
 
 ## New experiment: Upgrade as-needed
@@ -47,7 +47,8 @@ Our reliable though-challenger Alex pointed out that upgrades give us typically
 little value at a relatively high cost. So we have decided to try not upgrading
 libraries unless we would have a good reason to do it (such as a known security
 problem or a new functionality we want). It is obviously not optimal and the
-upgrades might be big and painful but we will see how it goes.
+upgrades might be big and painful but we will try it for a while and evaluate
+how it works for us.
 
 ## Conclusion
 
