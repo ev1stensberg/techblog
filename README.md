@@ -36,3 +36,8 @@ Deploy to github pages with
 gulp build:prod
 gulp deploy
 ```
+
+**BEWARE: ** `publish` is broken if you use 2-factor authentication with GH as of
+10/2015, see [issue #68](https://github.com/shinnn/gulp-gh-pages/issues/68). You can
+still do this: `gulp deploy; cd .publish; git add .; git commit -am "Update <comment>"; git push; `
+
