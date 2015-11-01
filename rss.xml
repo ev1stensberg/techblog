@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Sun, 01 Nov 2015 13:59:55 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Introducing the Series Nettbutikk Team's Experiences and Experiments]]></title><description><![CDATA[<p><em>A part of the series Nettbutikk Team&#39;s Experiences and Experiments</em></p>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Sun, 01 Nov 2015 14:13:09 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Introducing the Series Nettbutikk Team's Experiences and Experiments]]></title><description><![CDATA[<p><em>A part of the series Nettbutikk Team&#39;s Experiences and Experiments</em></p>
 <p>We are starting a new blog series tracking the experiences and (process)
 experiments of the team behind <a href="https://nettbutikk.netcom.no">nettbutikk.netcom.no</a>.
 This is the best product development process and team I have ever been to and
@@ -59,7 +59,22 @@ handled the increased load formidably (contrary to some backend systems, sadly).
 the lean way. Yet they have different background and approaches. The similarities
 give us a strong push towards minimalism and getting stuff out, while the
 differences spark valuable discussions and lead to a much better process and code.</p>
-]]></description><link>http://teliasonera.github.io/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</link><guid isPermaLink="true">http://teliasonera.github.io/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Upgrade or not to upgrade? The eternal dilemma]]></title><description><![CDATA[<p><em>A part of the series Nettbutikk Team&#39;s Experiences and Experiments</em></p>
+]]></description><link>http://teliasonera.github.io/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</link><guid isPermaLink="true">http://teliasonera.github.io/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Nettbutikk: The No Status Standup Experiment]]></title><description><![CDATA[<p><em>A part of the series Nettbutikk Team&#39;s Experiences and Experiments</em></p>
+<p>The Nettbutikk team likes to challenge all established truths. Jakob Lind has
+come with with an excellent question: do we need standups? Do we all need to
+stand in front of our Kanban board and discuss what was and will be, especially
+since we often already know that, thanks to communication all the time?</p>
+<p>We have agreed to keep the standups but to limit hem to:</p>
+<ol>
+<li>A brief review of what has been deployed to production the previous day</li>
+<li>Any blockers, problems, and requests for help</li>
+</ol>
+<p>i.e. skipping the reporting of the status of tasks if they progress &quot;according
+to the plan&quot; and there is nothing noteworthy about them. Of course participants
+can ask, if they want to know. And they should do so, if they f.ex. feel a task is
+taking too long.</p>
+<p>Minimalism for the win!</p>
+]]></description><link>http://teliasonera.github.io/blog/nettbutikk-the-no-status-standup-experiment</link><guid isPermaLink="true">http://teliasonera.github.io/blog/nettbutikk-the-no-status-standup-experiment</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Upgrade or not to upgrade? The eternal dilemma]]></title><description><![CDATA[<p><em>A part of the series Nettbutikk Team&#39;s Experiences and Experiments</em></p>
 <p>Handling dependencies is one of important challenges in any software project -
 and especially in the fast-moving JavaScript world. Our
 <a href="nettbutikk.netcom.no">Nettbutikk</a> team just had a heated discussion about
@@ -178,19 +193,4 @@ balance for a particular team. Development is fun.</p>
 </tbody>
 </table>
 <p>Since we decided to do a shorter hack day for our first experiment, we accepted that teams presented concepts as hacks. In fact, the two winning teams did not have a potentially shippable product. Next time around, if we are doing a full hack day, we will focus more on getting some minimum products finished. </p>
-]]></description><link>http://teliasonera.github.io/blog/afternoon-hack</link><guid isPermaLink="true">http://teliasonera.github.io/blog/afternoon-hack</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Mon, 19 Oct 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[No title]]></title><description><![CDATA[<p><em>A part of the series Nettbutikk Team&#39;s Experiences and Experiments</em></p>
-<p>The Nettbutikk team likes to challenge all established truths. Jakob Lind has
-come with with an excellent question: do we need standups? Do we all need to
-stand in front of our Kanban board and discuss what was and will be, especially
-since we often already know that, thanks to communication all the time?</p>
-<p>We have agreed to keep the standups but to limit hem to:</p>
-<ol>
-<li>A brief review of what has been deployed to production the previous day</li>
-<li>Any blockers, problems, and requests for help</li>
-</ol>
-<p>i.e. skipping the reporting of the status of tasks if they progress &quot;according
-to the plan&quot; and there is nothing noteworthy about them. Of course participants
-can ask, if they want to know. And they should do so, if they f.ex. feel a task is
-taking too long.</p>
-<p>Minimalism for the win!</p>
-]]></description><link>http://teliasonera.github.io/posts/post-4</link><guid isPermaLink="true">http://teliasonera.github.io/posts/post-4</guid></item></channel></rss>
+]]></description><link>http://teliasonera.github.io/blog/afternoon-hack</link><guid isPermaLink="true">http://teliasonera.github.io/blog/afternoon-hack</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Mon, 19 Oct 2015 00:00:00 GMT</pubDate></item></channel></rss>
