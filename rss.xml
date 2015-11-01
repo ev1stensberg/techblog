@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 20 Oct 2015 10:42:56 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Upgrade or not to upgrade? The eternal dilemma]]></title><description><![CDATA[<p>Handling dependencies is one of important challenges in any software project -
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Sun, 01 Nov 2015 13:59:55 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Introducing the Series Nettbutikk Team's Experiences and Experiments]]></title><description><![CDATA[<p><em>A part of the series Nettbutikk Team&#39;s Experiences and Experiments</em></p>
+<p>We are starting a new blog series tracking the experiences and (process)
+experiments of the team behind <a href="https://nettbutikk.netcom.no">nettbutikk.netcom.no</a>.
+This is the best product development process and team I have ever been to and
+it has been called &quot;extreme&quot; for couple of reasons. We are quite excited about it
+and would like to share our experiences, successes, and failures for the amusement
+and inspiration of our readers.</p>
+<p>When asked why we think this team and product development were so great, this
+was my answer:</p>
+<blockquote>
+<p>Full stack &amp; full control: frontend, backend, ops. Great people &amp; ideally
+small team. Very pragmatic, minimalistic and evolutionary approach to the
+dev process. Working closely with the business and seeing the app actually
+matters to them and influences real people every day.</p>
+</blockquote>
+<h2 id="what-is-the-project-about-">What is the project about?</h2>
+<p>The project started as an experiment. It grew out of the pain with the old
+huge and inflexible webshop rented from a third party. The business wanted
+something that would fit their needs, that could evolve, enable them to experiment.
+Something, where the time from an idea to production would be days or hours, not
+months.</p>
+<p>So they have decided to get a small team of highly skilled developers, sitting
+and working together with the business, and write their own, better webshop.
+The hypothesis was that even with expensive skilled Norwegian developers, it
+would pay off thanks to more satisfied customers that would more easily find
+what they wanted.</p>
+<h2 id="why-is-considered-extreme-">Why is considered &quot;extreme&quot;?</h2>
+<p>There multiple things considered &quot;extreme&quot; about this team. We have released to
+production, to real customers, only in a few weeks, including just a single
+product page. We deploy whenever we want to, and do our own operations, using
+the cloud instead of the enterprise infrastructure. Our development process is
+minimalistic, we don&#39;t follow a methodology, we create (and re-create) our own,
+using only a physical Kanban board instead of Jira. And we run on Node.js instead
+of the standard JVM. We have ditched e-mail and started using Slack instead.</p>
+<h2 id="a-little-of-history">A little of history</h2>
+<p>The project started in February 2015 as an experiment. The first release - a
+single page for one variant of one phone - came after 7 weeks (though the
+optimists hoped for 2). Then it steadily grew and a month ahead of the planned
+experiment end it was deemed successful. By summer, the whole webshop with the
+exception of checkout was in the new system, and it was better and more
+performant then the old one. That enabled a large re-design for a summer campaign.
+The business started with A/B experiments and there was a steady flow of new
+features and improvements, with focus shifting gradually towards implementing
+checkout directly in the new webshop. When the newest iPhone arrived, the system
+handled the increased load formidably (contrary to some backend systems, sadly).</p>
+<h2 id="meet-the-team">Meet the team</h2>
+<p>The core team that started the journey consists of:</p>
+<ul>
+<li>Alex York, master of all things CSS and JS with a .Net background, love of TDD,
+  and ultimate judge of code quality and understandability</li>
+<li>Jakob Lind, the get-things-done guy, an Emacs and functional programming fanboy,
+  always on lookout for better ways to do things</li>
+<li>Jakub Holý, the operations and data specialist and Clojre(Script) evangelist</li>
+<li>Ketil Jensen, our &quot;agile coach,&quot; and a shield and liaison between us and the rest of the organization</li>
+<li>Magnus Indregård, our primary business representative</li>
+</ul>
+<p>All of the developers are very capable, they all are very pragmatic and favour
+the lean way. Yet they have different background and approaches. The similarities
+give us a strong push towards minimalism and getting stuff out, while the
+differences spark valuable discussions and lead to a much better process and code.</p>
+]]></description><link>http://teliasonera.github.io/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</link><guid isPermaLink="true">http://teliasonera.github.io/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Upgrade or not to upgrade? The eternal dilemma]]></title><description><![CDATA[<p><em>A part of the series Nettbutikk Team&#39;s Experiences and Experiments</em></p>
+<p>Handling dependencies is one of important challenges in any software project -
 and especially in the fast-moving JavaScript world. Our
 <a href="nettbutikk.netcom.no">Nettbutikk</a> team just had a heated discussion about
 handling upgrades of our dependencies that continuous our learning journey lined
@@ -117,4 +178,19 @@ balance for a particular team. Development is fun.</p>
 </tbody>
 </table>
 <p>Since we decided to do a shorter hack day for our first experiment, we accepted that teams presented concepts as hacks. In fact, the two winning teams did not have a potentially shippable product. Next time around, if we are doing a full hack day, we will focus more on getting some minimum products finished. </p>
-]]></description><link>http://teliasonera.github.io/blog/afternoon-hack</link><guid isPermaLink="true">http://teliasonera.github.io/blog/afternoon-hack</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Mon, 19 Oct 2015 00:00:00 GMT</pubDate></item></channel></rss>
+]]></description><link>http://teliasonera.github.io/blog/afternoon-hack</link><guid isPermaLink="true">http://teliasonera.github.io/blog/afternoon-hack</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Mon, 19 Oct 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[No title]]></title><description><![CDATA[<p><em>A part of the series Nettbutikk Team&#39;s Experiences and Experiments</em></p>
+<p>The Nettbutikk team likes to challenge all established truths. Jakob Lind has
+come with with an excellent question: do we need standups? Do we all need to
+stand in front of our Kanban board and discuss what was and will be, especially
+since we often already know that, thanks to communication all the time?</p>
+<p>We have agreed to keep the standups but to limit hem to:</p>
+<ol>
+<li>A brief review of what has been deployed to production the previous day</li>
+<li>Any blockers, problems, and requests for help</li>
+</ol>
+<p>i.e. skipping the reporting of the status of tasks if they progress &quot;according
+to the plan&quot; and there is nothing noteworthy about them. Of course participants
+can ask, if they want to know. And they should do so, if they f.ex. feel a task is
+taking too long.</p>
+<p>Minimalism for the win!</p>
+]]></description><link>http://teliasonera.github.io/posts/post-4</link><guid isPermaLink="true">http://teliasonera.github.io/posts/post-4</guid></item></channel></rss>
