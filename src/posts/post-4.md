@@ -1,9 +1,9 @@
 ---
-title: Nettbutikk: The "No Status" Standup Experiment
+title: "Nettbutikk: The No Status Standup Experiment"
 template: post.html
 date: 2015-11-01
 author: Jakub Holý
-tags: nettbutikk, product development, lean, process
+tags: nettbutikk, product development, lean
 ---
 
 *A part of the series Nettbutikk Team's Experiences and Experiments*
