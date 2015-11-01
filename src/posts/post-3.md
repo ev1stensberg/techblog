@@ -4,8 +4,10 @@ template: post.html
 date: 2015-10-20
 description: The pain of upgrading project dependencies vs. not upgrading
 author: Jakub Holý
-tags: experience, development, learning
+tags: nettbutikk, experience, development, learning
 ---
+
+*A part of the series Nettbutikk Team's Experiences and Experiments*
 
 Handling dependencies is one of important challenges in any software project -
 and especially in the fast-moving JavaScript world. Our
