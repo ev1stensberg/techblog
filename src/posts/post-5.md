@@ -6,7 +6,7 @@ author: Jakub Holý
 tags: nettbutikk, product development, lean
 ---
 
-*A part of the series Nettbutikk Team's Experiences and Experiments*
+*A part of the [series Nettbutikk Team's Experiences and Experiments](/tech-blog/tags/nettbutikk)*
 
 We are starting a new blog series tracking the experiences and (process)
 experiments of the team behind [nettbutikk.netcom.no](https://nettbutikk.netcom.no).

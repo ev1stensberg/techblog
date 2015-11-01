@@ -7,7 +7,7 @@ author: Jakub Holý
 tags: nettbutikk, experience, development, learning
 ---
 
-*A part of the series Nettbutikk Team's Experiences and Experiments*
+*A part of the [series Nettbutikk Team's Experiences and Experiments](/tech-blog/tags/nettbutikk)*
 
 Handling dependencies is one of important challenges in any software project -
 and especially in the fast-moving JavaScript world. Our

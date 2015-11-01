@@ -6,7 +6,7 @@ author: Jakub Holý
 tags: nettbutikk, product development, lean
 ---
 
-*A part of the series Nettbutikk Team's Experiences and Experiments*
+*A part of the [series Nettbutikk Team's Experiences and Experiments](/tech-blog/tags/nettbutikk)*
 
 The Nettbutikk team likes to challenge all established truths. Jakob Lind has
 come with with an excellent question: do we need standups? Do we all need to
