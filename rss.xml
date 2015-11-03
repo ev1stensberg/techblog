@@ -1,5 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://localhost:8000</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 03 Nov 2015 08:28:31 GMT</lastBuildDate><atom:link href="http://localhost:8000/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Introducing the Series Nettbutikk Team's Experiences and Experiments]]></title><description><![CDATA[<p><em>A part of the <a href="/tech-blog/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 03 Nov 2015 09:42:59 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Extreme Minimalism - replacing shop.netcom.no one tiny bit at a time (Smidig 2015 transcript)]]></title><description><![CDATA[<p>Replacing legacy systems typically starts with an excitement, proceeds through
+months or years of work, and results in a failure. The incremental strangling
+of the old shop.netcom.no is a very different story and the approach is
+rightfully called &quot;extreme&quot; by the rest of the organization. Read on to learn how
+we have been replacing the legacy webshop one tiny bit at a time. I also hope
+to share my continual amazement at how much work can be postponed to be able to
+deliver a &quot;feature&quot; early.</p>
+<p><em>A part of the <a href="/tech-blog/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
+<h2 id="my-best-project-ever">My best ‘project’ ever</h2>
+<p>Nettbutikk.netcom.no is the best project - though I rather say product development -
+I have ever been to. When asked why, this was my answer:</p>
+<blockquote>
+<p>Full stack &amp; full control: frontend, backend, ops. Great people &amp; ideally
+small team. Very pragmatic, minimalistic and evolutionary approach to the dev
+process. Working closely with the business and seeing the app actually matters
+to them and influences real people every day.</p>
+</blockquote>
+<p>I.e.</p>
+<ol>
+<li>We do everything - front-end, back-end, operations, we deploy whenever we want to.</li>
+<li>The team is really small and totally awesome</li>
+<li>We sit together with the business and work together all the time</li>
+<li>The application is really important for the business - and every line of code
+I release to production can improve (or destroy) the experiences for thousands
+of people.</li>
+</ol>
+<p>There are many things I am excited about in this project but today I want to focus on one thing.</p>
+<p>Normally when people speak about their favourite project, they brag about what
+they did. I want to brag about what we have not done.</p>
+<h2 id="background-extreme-minimalism-mind-set">Background: Extreme Minimalism Mind-set</h2>
+<p>One of the great things about this team is its minimalist mind-set:</p>
+<ol>
+<li>We get by with the minimal process possible, and continually evolve it,
+add and (preferably) remove from it as we learn and our needs change. No Jira,
+no demos (the business sees every new change anyway), no retrospectives (we
+practice continuous improvement), ...</li>
+<li>We are library and tool skeptics (thanks, Alex!) - we only add a it if we
+really need to, if skipping it or writing it ourselves isn’t reasonable</li>
+<li>We always try to trim a feature down to the bare minimum and release the
+smallest possible chunk of functionality that adds any value to us,
+the business, or our customers &lt;--- this is what I will focus on today</li>
+</ol>
+<h2 id="the-goal-of-nettbutikk-netcom-no">The goal of nettbutikk.netcom.no</h2>
+<p>NetCom had - or actually has - this huge, inflexible webshop rented from a 3rd
+party and customized. But the business wanted something different, something
+that would actually fit their needs, evolve continuously, enable them to experiment.
+Something where the time from an idea to production wouldn&#39;t be months but days
+or hours.</p>
+<p>So they have decided to get a few skilled developers, having them sitting together
+with the business (instead of being outsourced) and writing their own webshop.</p>
+<p>To me this sounds very scary. As far as I know, most of the &quot;let’s ditch this
+non-trivial software and write it from scratch&quot; projects fail badly.</p>
+<p>And when you think about it, you need a lot to implement a webshop:</p>
+<p><img src="../../images/extreme_minimalism-webshop_needs.png" alt="webshop_needs"></p>
+<ul>
+<li>You obviously need a database</li>
+<li>Get data from primary sources and transform the for the views</li>
+<li>Enhance / override the primary data</li>
+<li>Product listing (for all product types)</li>
+<li>Product details page (for all product types)</li>
+<li>Checkout, payment</li>
+<li>Filtering, search, categories</li>
+<li>Analytics</li>
+<li>user login</li>
+<li>(and certainly many things I have forgotten)</li>
+</ul>
+<p>This sounds like at least 1 year project with a big-bang release at the end.
+You cannot release half of a webshop, right? You can’t release a perfect webshop
+without checkout, where people can’t actually buy stuff.</p>
+<h2 id="our-first-release-">Our first release:</h2>
+<p><strong>Product details page of a single product variant</strong></p>
+<p>Well, our first release was a single page - product details of one variant of
+one product. We have released it in just a few weeks (though more than the two
+I hoped for).</p>
+<h2 id="here-it-is-">Here it is:</h2>
+<p><img src="../../images/extreme_minimalism-nettbutik_r1-page1.png" alt="release 1 page 1"></p>
+<p>So you would navigate the old shop and when you clicked on iPhone 6 plus 16GB,
+you would come to our page. You could select a color, subscription, ...</p>
+<p><img src="../../images/extreme_minimalism-nettbutik_r1-page2.png" alt="release 1 page 2"></p>
+<p>... services and accessories. And when you clicked on the &quot;Fortsett&quot; button, you
+would go to checkout in the old shop again. And even the &quot;shopping cart&quot; - the
+configuration of your order - would mostly just reuse the shopping cart in the
+old shop via an ugly iframe hack.</p>
+<h2 id="so-there-is-a-lot-we-did-not-need-to-do-">So there is a lot we did not need to do:</h2>
+<p><img src="../../images/extreme_minimalism-webshop-not_done.png" alt="webshop-not_done"></p>
+<p>Later, we extended it to all variants, all iPhones, eventually all phones,
+phone listing, all product types, ... .</p>
+<p>Nowadays, 10 months since start, we have everything, only the checkout still
+lives in the old system. (And we are looking forward to getting rid of it as well!)</p>
+<h2 id="the-four-techniques">The Four Techniques</h2>
+<p>How do we do it? How do we trim the next chunk of functionality to the total minimum? We
+apply these techniques:</p>
+<p><strong>You Don’t Need It Just Yet. Postpone it!</strong></p>
+<ol>
+<li>Do it manually</li>
+<li>Hardcode it</li>
+<li>Reuse</li>
+<li>Slice &amp; Dice</li>
+</ol>
+<p>The key principle is &quot;You Don’t Need It Just Yet&quot;. There is a lot you truly need,
+but most likely it can wait a day - or a few weeks
+(and you can hardcode it or do it manually in the meantime).
+The magic words &quot;in the first phase [or day]&quot; (and, possibly, &quot;experiment&quot;) can
+help you to get this across to the business people that are always eager to get
+more cool stuff out. (And, of course, by doing less now we get eventually more done!)</p>
+<p>It is also very important to remember - and to communicate to the business - that
+you only need not to be worse than the existing functionality - improvements,
+bug fixes, and additions may wait. (Even though we more less managed to follow
+this maxim, everything we did is better and performs better than in the old shop :-) .)</p>
+<ol>
+<li>Do it manually - you can get shockingly far with doing things manually.
+During many months, our heroic biz people duplicated data between the old and
+new webshop instead of automatically syncing them. And we still need to add
+new phones manually to the webshop.</li>
+<li>Hardcode it - with just a few minutes to deploy, the developers sitting with
+the business, and possibly only a small subset of
+products, a lot may be hard-coded instead of having a CMS to add/override data.
+These days, when we need to show &quot;Checkout down for maintenance,&quot; we still just
+change it in code, release, and then re-deploy the previous version.</li>
+<li>Reuse what is there, even though it certainly gets ugly quickly. We have
+reused the shopping cart via an iframe and still use the checkout process in the
+old shop.</li>
+<li>Slice &amp; Dice: Release the smallest subset of the feature for just one use
+case / target group first. We have started with a page for a single product
+variant - which decreased the complexity considerably. And when developing a new
+cart functionality, we applied it first just to accessories - and only the part
+users cannot see in the UI (though they use it).</li>
+</ol>
+<p>I am constantly surprised how far we can get with these.
+It works best when having colleagues that challenge you on doing even less, on
+hardcoding and doing manually a little more than you would want to. (We are
+developers after all, we love automation!)</p>
+<h2 id="always-ask-">Always ask:</h2>
+<p><strong>Do I need it <em>now</em>?</strong></p>
+<p>(Hint: Most of the time the answer is no.)</p>
+<h2 id="want-to-know-more-">Want to know more?</h2>
+<ul>
+<li><a href="https://netcom.no/disrupt-us">Work with me!</a></li>
+<li>Contanct me at Twitter <a href="https://twitter.com/HolyJak">@HolyJak</a></li>
+<li>Learn more about our journey at the <a href="teliasonera.github.io/tech-blog/">TeliaSonera Tech Blog</a></li>
+</ul>
+<p>Thank you!</p>
+]]></description><link>http://teliasonera.github.io/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</link><guid isPermaLink="true">http://teliasonera.github.io/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Tue, 03 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introducing the Series Nettbutikk Team's Experiences and Experiments]]></title><description><![CDATA[<p><em>A part of the <a href="/tech-blog/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
 <p>We are starting a new blog series tracking the experiences and (process)
 experiments of the team behind <a href="https://nettbutikk.netcom.no">nettbutikk.netcom.no</a>.
 This is the best product development process and team I have ever been to and
@@ -59,7 +201,7 @@ handled the increased load formidably (contrary to some backend systems, sadly).
 the lean way. Yet they have different background and approaches. The similarities
 give us a strong push towards minimalism and getting stuff out, while the
 differences spark valuable discussions and lead to a much better process and code.</p>
-]]></description><link>http://localhost:8000/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</link><guid isPermaLink="true">http://localhost:8000/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Nettbutikk: The No Status Standup Experiment]]></title><description><![CDATA[<p><em>A part of the <a href="/tech-blog/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
+]]></description><link>http://teliasonera.github.io/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</link><guid isPermaLink="true">http://teliasonera.github.io/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Nettbutikk: The No Status Standup Experiment]]></title><description><![CDATA[<p><em>A part of the <a href="/tech-blog/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
 <p>The Nettbutikk team likes to challenge all established truths. Jakob Lind has
 come with with an excellent question: do we need standups? Do we all need to
 stand in front of our Kanban board and discuss what was and will be, especially
@@ -74,7 +216,7 @@ to the plan&quot; and there is nothing noteworthy about them. Of course particip
 can ask, if they want to know. And they should do so, if they f.ex. feel a task is
 taking too long.</p>
 <p>Minimalism for the win!</p>
-]]></description><link>http://localhost:8000/blog/nettbutikk-the-no-status-standup-experiment</link><guid isPermaLink="true">http://localhost:8000/blog/nettbutikk-the-no-status-standup-experiment</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Upgrade or not to upgrade? The eternal dilemma]]></title><description><![CDATA[<p><em>A part of the <a href="/tech-blog/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
+]]></description><link>http://teliasonera.github.io/blog/nettbutikk-the-no-status-standup-experiment</link><guid isPermaLink="true">http://teliasonera.github.io/blog/nettbutikk-the-no-status-standup-experiment</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Upgrade or not to upgrade? The eternal dilemma]]></title><description><![CDATA[<p><em>A part of the <a href="/tech-blog/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
 <p>Handling dependencies is one of important challenges in any software project -
 and especially in the fast-moving JavaScript world. Our
 <a href="nettbutikk.netcom.no">Nettbutikk</a> team just had a heated discussion about
@@ -113,7 +255,7 @@ how it works for us.</p>
 <p>Handling and upgrading dependencies is difficult and costly. It&#39;s important to
 evaluate the cost-benefit ration and experiment to find the &quot;least bad&quot; approach and
 balance for a particular team. Development is fun.</p>
-]]></description><link>http://localhost:8000/blog/upgrade-or-not-to-upgrade-the-eternal-dilemma</link><guid isPermaLink="true">http://localhost:8000/blog/upgrade-or-not-to-upgrade-the-eternal-dilemma</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Tue, 20 Oct 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Afternoon-hack]]></title><description><![CDATA[<p>A few thursdays ago we arranged our very first hack day at TeliaSonera. The event was attended by 15 people, forming 5 different teams. Snacks and drinks were on the house. Pizza was served to the hungry late stayers. But most importantly: During the day we saw many good ideas shape up and worked on. A passionate group worked hard throughout the day. Some working on internal tools, other groups on customer facing products and new concepts. The results were presented at 9 AM the morning after. And after a vote later in the afternoon, we could announce two &quot;winners&quot;. The attendees reported back that they really enjoyed our afternoon-hack event, so we will definitely do more of that in the future.</p>
+]]></description><link>http://teliasonera.github.io/blog/upgrade-or-not-to-upgrade-the-eternal-dilemma</link><guid isPermaLink="true">http://teliasonera.github.io/blog/upgrade-or-not-to-upgrade-the-eternal-dilemma</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Tue, 20 Oct 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Afternoon-hack]]></title><description><![CDATA[<p>A few thursdays ago we arranged our very first hack day at TeliaSonera. The event was attended by 15 people, forming 5 different teams. Snacks and drinks were on the house. Pizza was served to the hungry late stayers. But most importantly: During the day we saw many good ideas shape up and worked on. A passionate group worked hard throughout the day. Some working on internal tools, other groups on customer facing products and new concepts. The results were presented at 9 AM the morning after. And after a vote later in the afternoon, we could announce two &quot;winners&quot;. The attendees reported back that they really enjoyed our afternoon-hack event, so we will definitely do more of that in the future.</p>
 <blockquote>
   <p>
     I have not failed. I&#39;ve just found 10,000 ways that won&#39;t work.
@@ -147,7 +289,7 @@ balance for a particular team. Development is fun.</p>
 <h3 id="show-us-what-you-ve-learned">Show us what you&#39;ve learned</h3>
 <p>Teams were challenged to present their hacks on the morning after, at 9AM. To keep things transparent and simple we decided to do the presentations in the open office space. Quite a few people got interested in what was going, and with some good presentations being made we managed to raise additional interest in our afternoon hack day. Next time we hope to have even more people joining. People has already started asking when our next event will take place. </p>
 <p>In the afternoon we invited everybody to vote for two winners; best customer facing product and best internal product. No fancy prizes, just the honors.</p>
-<p><img src="/images/hack-day-presentation-1.jpg" alt="Presentation of hacks"></p>
+<p><img src="/tech-blog/images/hack-day-presentation-1.jpg" alt="Presentation of hacks"></p>
 <h3 id="what-we-learned-from-arranging-the-event-">What we learned from arranging the event?</h3>
 <p>We tried hard to keep our first event as simple as possible. That approach worked really well. The table below summarizes our key learnings from the event, tools and other learnings.</p>
 <table>
@@ -193,4 +335,4 @@ balance for a particular team. Development is fun.</p>
 </tbody>
 </table>
 <p>Since we decided to do a shorter hack day for our first experiment, we accepted that teams presented concepts as hacks. In fact, the two winning teams did not have a potentially shippable product. Next time around, if we are doing a full hack day, we will focus more on getting some minimum products finished. </p>
-]]></description><link>http://localhost:8000/blog/afternoon-hack</link><guid isPermaLink="true">http://localhost:8000/blog/afternoon-hack</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Mon, 19 Oct 2015 00:00:00 GMT</pubDate></item></channel></rss>
+]]></description><link>http://teliasonera.github.io/blog/afternoon-hack</link><guid isPermaLink="true">http://teliasonera.github.io/blog/afternoon-hack</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Mon, 19 Oct 2015 00:00:00 GMT</pubDate></item></channel></rss>
