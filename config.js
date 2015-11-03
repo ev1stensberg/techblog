@@ -4,7 +4,7 @@ var config = {
     site: {
       url: process.env.SITE_URL || 'http://teliasonera.github.io/tech-blog', // full site url
       title: 'TeliaSonera TechBlog',
-      googleAnalytics: process.env.GOOGLE_ANALYTICS || '123457'
+      googleAnalytics: 'UA-65719787-2'
     }
   },
   development: {
