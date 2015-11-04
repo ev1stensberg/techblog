@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 03 Nov 2015 09:44:36 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Extreme Minimalism - replacing shop.netcom.no one tiny bit at a time (Smidig 2015 transcript)]]></title><description><![CDATA[<p>Replacing legacy systems typically starts with an excitement, proceeds through
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 04 Nov 2015 12:22:46 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Extreme Minimalism - replacing shop.netcom.no one tiny bit at a time (Smidig 2015 transcript)]]></title><description><![CDATA[<p>Replacing legacy systems typically starts with an excitement, proceeds through
 months or years of work, and results in a failure. The incremental strangling
 of the old shop.netcom.no is a very different story and the approach is
 rightfully called &quot;extreme&quot; by the rest of the organization. Read on to learn how
@@ -189,13 +189,13 @@ handled the increased load formidably (contrary to some backend systems, sadly).
 <h2 id="meet-the-team">Meet the team</h2>
 <p>The core team that started the journey consists of:</p>
 <ul>
-<li>Alex York, master of all things CSS and JS with a .Net background, love of TDD,
+<li>Alex York, master of all things CSS and JS with a .NET background, love of TDD,
   and ultimate judge of code quality and understandability</li>
-<li>Jakob Lind, the get-things-done guy, an Emacs and functional programming fanboy,
+<li>Jakob Lind, the get-things-done guy, an Emacs and functional programming enthusiast,
   always on lookout for better ways to do things</li>
 <li>Jakub Holý, the operations and data specialist and Clojre(Script) evangelist</li>
 <li>Ketil Jensen, our &quot;agile coach,&quot; and a shield and liaison between us and the rest of the organization</li>
-<li>Magnus Indregård, our primary business representative</li>
+<li>Magnus Indregard, our primary business representative</li>
 </ul>
 <p>All of the developers are very capable, they all are very pragmatic and favour
 the lean way. Yet they have different background and approaches. The similarities
@@ -335,4 +335,19 @@ balance for a particular team. Development is fun.</p>
 </tbody>
 </table>
 <p>Since we decided to do a shorter hack day for our first experiment, we accepted that teams presented concepts as hacks. In fact, the two winning teams did not have a potentially shippable product. Next time around, if we are doing a full hack day, we will focus more on getting some minimum products finished. </p>
-]]></description><link>http://teliasonera.github.io/blog/afternoon-hack</link><guid isPermaLink="true">http://teliasonera.github.io/blog/afternoon-hack</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Mon, 19 Oct 2015 00:00:00 GMT</pubDate></item></channel></rss>
+]]></description><link>http://teliasonera.github.io/blog/afternoon-hack</link><guid isPermaLink="true">http://teliasonera.github.io/blog/afternoon-hack</guid><dc:creator><![CDATA[Ketil Jensen]]></dc:creator><pubDate>Mon, 19 Oct 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[No title]]></title><description><![CDATA[<ul>
+<li>Don&#39;t follow a methodology - lead, explore, learn</li>
+<li>No retro - ongoing process improvement</li>
+<li>Minimal standup (link)</li>
+<li>phys board<ul>
+<li>Current + week milestone + KPIs</li>
+<li>Two lanes</li>
+<li>No done</li>
+</ul>
+</li>
+<li>occasional planning</li>
+<li>biz sitting with devs, talking constantly</li>
+<li>no demos</li>
+<li>release anytime</li>
+</ul>
+]]></description><link>http://teliasonera.github.io/posts/post-7-process</link><guid isPermaLink="true">http://teliasonera.github.io/posts/post-7-process</guid></item></channel></rss>
