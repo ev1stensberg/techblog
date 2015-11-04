@@ -64,13 +64,13 @@ handled the increased load formidably (contrary to some backend systems, sadly).
 
 The core team that started the journey consists of:
 
-* Alex York, master of all things CSS and JS with a .Net background, love of TDD,
+* Alex York, master of all things CSS and JS with a .NET background, love of TDD,
     and ultimate judge of code quality and understandability
-* Jakob Lind, the get-things-done guy, an Emacs and functional programming fanboy,
+* Jakob Lind, the get-things-done guy, an Emacs and functional programming enthusiast,
     always on lookout for better ways to do things
 * Jakub Holý, the operations and data specialist and Clojre(Script) evangelist
 * Ketil Jensen, our "agile coach," and a shield and liaison between us and the rest of the organization
-* Magnus Indregård, our primary business representative
+* Magnus Indregard, our primary business representative
 
 All of the developers are very capable, they all are very pragmatic and favour
 the lean way. Yet they have different background and approaches. The similarities
