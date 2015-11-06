@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 04 Nov 2015 12:22:46 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Extreme Minimalism - replacing shop.netcom.no one tiny bit at a time (Smidig 2015 transcript)]]></title><description><![CDATA[<p>Replacing legacy systems typically starts with an excitement, proceeds through
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 06 Nov 2015 10:04:32 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Extreme Minimalism - replacing shop.netcom.no one tiny bit at a time (Smidig 2015 transcript)]]></title><description><![CDATA[<p>Replacing legacy systems typically starts with an excitement, proceeds through
 months or years of work, and results in a failure. The incremental strangling
 of the old shop.netcom.no is a very different story and the approach is
 rightfully called &quot;extreme&quot; by the rest of the organization. Read on to learn how
@@ -144,8 +144,8 @@ developers after all, we love automation!)</p>
 ]]></description><link>http://teliasonera.github.io/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</link><guid isPermaLink="true">http://teliasonera.github.io/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Tue, 03 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introducing the Series Nettbutikk Team's Experiences and Experiments]]></title><description><![CDATA[<p><em>A part of the <a href="/tech-blog/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
 <p>We are starting a new blog series tracking the experiences and (process)
 experiments of the team behind <a href="https://nettbutikk.netcom.no">nettbutikk.netcom.no</a>.
-This is the best product development process and team I have ever been to and
-it has been called &quot;extreme&quot; for couple of reasons. We are quite excited about it
+This is the best product development process and team I have ever part of and
+it has been called &quot;extreme&quot; for a couple of reasons. We are quite excited about it
 and would like to share our experiences, successes, and failures for the amusement
 and inspiration of our readers.</p>
 <p>When asked why we think this team and product development were so great, this
@@ -153,22 +153,22 @@ was my answer:</p>
 <blockquote>
 <p>Full stack &amp; full control: frontend, backend, ops. Great people &amp; ideally
 small team. Very pragmatic, minimalistic and evolutionary approach to the
-dev process. Working closely with the business and seeing the app actually
+dev process. Working closely with the business and seeing that the app actually
 matters to them and influences real people every day.</p>
 </blockquote>
 <h2 id="what-is-the-project-about-">What is the project about?</h2>
 <p>The project started as an experiment. It grew out of the pain with the old
 huge and inflexible webshop rented from a third party. The business wanted
-something that would fit their needs, that could evolve, enable them to experiment.
+something that would fit their needs, that could evolve, and enable them to experiment.
 Something, where the time from an idea to production would be days or hours, not
 months.</p>
-<p>So they have decided to get a small team of highly skilled developers, sitting
+<p>So they decided to get a small team of highly skilled developers, sitting
 and working together with the business, and write their own, better webshop.
 The hypothesis was that even with expensive skilled Norwegian developers, it
 would pay off thanks to more satisfied customers that would more easily find
 what they wanted.</p>
-<h2 id="why-is-considered-extreme-">Why is considered &quot;extreme&quot;?</h2>
-<p>There multiple things considered &quot;extreme&quot; about this team. We have released to
+<h2 id="why-is-it-considered-extreme-">Why is it considered &quot;extreme&quot;?</h2>
+<p>There are multiple things considered &quot;extreme&quot; about this team. We have released to
 production, to real customers, only in a few weeks, including just a single
 product page. We deploy whenever we want to, and do our own operations, using
 the cloud instead of the enterprise infrastructure. Our development process is
@@ -206,14 +206,14 @@ differences spark valuable discussions and lead to a much better process and cod
 come with with an excellent question: do we need standups? Do we all need to
 stand in front of our Kanban board and discuss what was and will be, especially
 since we often already know that, thanks to communication all the time?</p>
-<p>We have agreed to keep the standups but to limit hem to:</p>
+<p>We have agreed to keep the standups but to limit them to:</p>
 <ol>
 <li>A brief review of what has been deployed to production the previous day</li>
 <li>Any blockers, problems, and requests for help</li>
 </ol>
 <p>i.e. skipping the reporting of the status of tasks if they progress &quot;according
 to the plan&quot; and there is nothing noteworthy about them. Of course participants
-can ask, if they want to know. And they should do so, if they f.ex. feel a task is
+can ask, if they want to know. And they should do so, if they e.g. feel a task is
 taking too long.</p>
 <p>Minimalism for the win!</p>
 ]]></description><link>http://teliasonera.github.io/blog/nettbutikk-the-no-status-standup-experiment</link><guid isPermaLink="true">http://teliasonera.github.io/blog/nettbutikk-the-no-status-standup-experiment</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Upgrade or not to upgrade? The eternal dilemma]]></title><description><![CDATA[<p><em>A part of the <a href="/tech-blog/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
