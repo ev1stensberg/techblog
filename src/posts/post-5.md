@@ -10,8 +10,8 @@ tags: nettbutikk, product development, lean
 
 We are starting a new blog series tracking the experiences and (process)
 experiments of the team behind [nettbutikk.netcom.no](https://nettbutikk.netcom.no).
-This is the best product development process and team I have ever been to and
-it has been called "extreme" for couple of reasons. We are quite excited about it
+This is the best product development process and team I have ever part of and
+it has been called "extreme" for a couple of reasons. We are quite excited about it
 and would like to share our experiences, successes, and failures for the amusement
 and inspiration of our readers.
 
@@ -20,26 +20,26 @@ was my answer:
 
 > Full stack & full control: frontend, backend, ops. Great people & ideally
 > small team. Very pragmatic, minimalistic and evolutionary approach to the
-> dev process. Working closely with the business and seeing the app actually
+> dev process. Working closely with the business and seeing that the app actually
 > matters to them and influences real people every day.
 
 ## What is the project about?
 
 The project started as an experiment. It grew out of the pain with the old
 huge and inflexible webshop rented from a third party. The business wanted
-something that would fit their needs, that could evolve, enable them to experiment.
+something that would fit their needs, that could evolve, and enable them to experiment.
 Something, where the time from an idea to production would be days or hours, not
 months.
 
-So they have decided to get a small team of highly skilled developers, sitting
+So they decided to get a small team of highly skilled developers, sitting
 and working together with the business, and write their own, better webshop.
 The hypothesis was that even with expensive skilled Norwegian developers, it
 would pay off thanks to more satisfied customers that would more easily find
 what they wanted.
 
-## Why is considered "extreme"?
+## Why is it considered "extreme"?
 
-There multiple things considered "extreme" about this team. We have released to
+There are multiple things considered "extreme" about this team. We have released to
 production, to real customers, only in a few weeks, including just a single
 product page. We deploy whenever we want to, and do our own operations, using
 the cloud instead of the enterprise infrastructure. Our development process is
