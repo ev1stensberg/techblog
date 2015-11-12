@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 06 Nov 2015 10:05:40 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Extreme Minimalism - replacing shop.netcom.no one tiny bit at a time (Smidig 2015 transcript)]]></title><description><![CDATA[<p>Replacing legacy systems typically starts with an excitement, proceeds through
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 12 Nov 2015 10:21:24 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Extreme Minimalism - replacing shop.netcom.no one tiny bit at a time (Smidig 2015 transcript)]]></title><description><![CDATA[<p>Replacing legacy systems typically starts with an excitement, proceeds through
 months or years of work, and results in a failure. The incremental strangling
 of the old shop.netcom.no is a very different story and the approach is
 rightfully called &quot;extreme&quot; by the rest of the organization. Read on to learn how
@@ -7,6 +7,7 @@ we have been replacing the legacy webshop one tiny bit at a time. I also hope
 to share my continual amazement at how much work can be postponed to be able to
 deliver a &quot;feature&quot; early.</p>
 <p><em>A part of the <a href="/tech-blog/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
+<p>(<a href="https://vimeo.com/145011983">See Extreme minimalism: Replacing shop.netcom one tiny bit at a time at Vimeo</a> (10 min).)</p>
 <h2 id="my-best-project-ever">My best ‘project’ ever</h2>
 <p>Nettbutikk.netcom.no is the best project - though I rather say product development -
 I have ever been to. When asked why, this was my answer:</p>
@@ -349,5 +350,10 @@ balance for a particular team. Development is fun.</p>
 <li>biz sitting with devs, talking constantly</li>
 <li>no demos</li>
 <li>release anytime</li>
+</ul>
+<h2 id="values">Values</h2>
+<ul>
+<li>Challenge established practices and truths - especially our own</li>
+<li>Minimalism - process, lib/tool skepticism </li>
 </ul>
 ]]></description><link>http://teliasonera.github.io/posts/post-7-process</link><guid isPermaLink="true">http://teliasonera.github.io/posts/post-7-process</guid></item></channel></rss>
