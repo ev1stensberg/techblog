@@ -17,6 +17,8 @@ deliver a "feature" early.
 
 *A part of the [series Nettbutikk Team's Experiences and Experiments](/tech-blog/tags/nettbutikk)*
 
+([See Extreme minimalism: Replacing shop.netcom one tiny bit at a time at Vimeo](https://vimeo.com/145011983) (10 min).)
+
 ## My best ‘project’ ever
 
 Nettbutikk.netcom.no is the best project - though I rather say product development -
