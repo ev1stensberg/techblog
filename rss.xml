@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 12 Nov 2015 10:21:24 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Extreme Minimalism - replacing shop.netcom.no one tiny bit at a time (Smidig 2015 transcript)]]></title><description><![CDATA[<p>Replacing legacy systems typically starts with an excitement, proceeds through
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TeliaSonera TechBlog]]></title><description><![CDATA[TeliaSonera TechBlog]]></description><link>http://teliasonera.github.io/tech-blog</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 13 Nov 2015 09:24:32 GMT</lastBuildDate><atom:link href="http://teliasonera.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Moving Too Fast For UX? Genuine Needs, Wrong Solutions]]></title><description><![CDATA[<p>Our UX designer and interaction specialist – a wonderful guy – has shocked us today by
+telling us that we (the developers) are moving too fast. He needs more time to do
+proper user experience and interface design – talk to real users, collect feedback,
+design based on data, not just hypotheses and gut feeling. To do this, he needs us
+to slow down.</p>
+<p><em>A part of the <a href="/tech-blog/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
+<p>We see a common human &quot;mistake&quot; here: where the expression of a genuine need gets mixed in with a suggestion for satisfying it. We are happy to learn about the need and will do our best to satisfy it (after all, we want everybody to be happy, and we too love
+evidence-based design) but we want to challenge the proposed solution. There is never
+just one way to satisfy a need – and the first proposed solution is rarely the best one (not mentioning that this particular one goes against the needs of us, the developers).</p>
+<p>So after some thought we proposed a better solution for satisfying the &quot;better UX&quot;
+need: our rewrite of the current system will simply copy the design of the existing
+system, and we will change it later on, when UX is ready to start experimenting with a new design. Thus we can get feedback on technical aspects of the new solution
+(performance, etc.) soon, while the UX-team designs a solution based on thorough user
+insight and data.</p>
+<p>Do you also experience that people mix needs and (suboptimal) solution proposals?
+Perhaps you do it yourself?</p>
+]]></description><link>http://teliasonera.github.io/blog/moving-too-fast-for-ux-genuine-needs-wrong-solutions</link><guid isPermaLink="true">http://teliasonera.github.io/blog/moving-too-fast-for-ux-genuine-needs-wrong-solutions</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Thu, 12 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Extreme Minimalism - replacing shop.netcom.no one tiny bit at a time (Smidig 2015 transcript)]]></title><description><![CDATA[<p>Replacing legacy systems typically starts with an excitement, proceeds through
 months or years of work, and results in a failure. The incremental strangling
 of the old shop.netcom.no is a very different story and the approach is
 rightfully called &quot;extreme&quot; by the rest of the organization. Read on to learn how
