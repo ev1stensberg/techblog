@@ -1,0 +1,27 @@
+---
+title: "Moving Too Fast For UX? Genuine Needs, Wrong Solutions"
+template: post.html
+date: 2015-11-12
+author: Jakub Holý
+tags: nettbutikk, lean, ux
+---
+Our UX designer and interaction specialist – a wonderful guy – has shocked us today by
+telling us that we (the developers) are moving too fast. He needs more time to do
+proper user experience and interface design – talk to real users, collect feedback,
+design based on data, not just hypotheses and gut feeling. To do this, he needs us
+to slow down.
+
+*A part of the [series Nettbutikk Team's Experiences and Experiments](/tech-blog/tags/nettbutikk)*
+
+We see a common human "mistake" here: where the expression of a genuine need gets mixed in with a suggestion for satisfying it. We are happy to learn about the need and will do our best to satisfy it (after all, we want everybody to be happy, and we too love
+evidence-based design) but we want to challenge the proposed solution. There is never
+just one way to satisfy a need – and the first proposed solution is rarely the best one (not mentioning that this particular one goes against the needs of us, the developers).
+
+So after some thought we proposed a better solution for satisfying the "better UX"
+need: our rewrite of the current system will simply copy the design of the existing
+system, and we will change it later on, when UX is ready to start experimenting with a new design. Thus we can get feedback on technical aspects of the new solution
+(performance, etc.) soon, while the UX-team designs a solution based on thorough user
+insight and data.
+
+Do you also experience that people mix needs and (suboptimal) solution proposals?
+Perhaps you do it yourself?
