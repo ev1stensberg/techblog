@@ -56,25 +56,31 @@
     </url>
     <url>
         <loc>http://teliasonera.github.io/blog/moving-too-fast-for-ux-genuine-needs-wrong-solutions</loc>
-        <lastmod>2015-11-13</lastmod>
+        <lastmod>2015-12-06</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://teliasonera.github.io/blog/why-we-practice-fronted-first-design-instead-of-api-first</loc>
+        <lastmod>2015-12-06</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://teliasonera.github.io/blog/1/index.html</loc>
-        <lastmod>2015-11-13</lastmod>
+        <lastmod>2015-12-06</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://teliasonera.github.io/blog/index.html</loc>
-        <lastmod>2015-11-13</lastmod>
+        <lastmod>2015-12-06</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://teliasonera.github.io/blog/2/index.html</loc>
-        <lastmod>2015-11-13</lastmod>
+        <lastmod>2015-12-06</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
