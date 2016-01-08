@@ -7,7 +7,7 @@ tags: nettbutikk, design
 ---
 Alex has introduced us to the idea of front-end first design: You start by creating the front-end (browser) code. As you discover data or API calls that you need, you mock them. When the UI stabilizes, you use the mocked APIs and data to create the backend with exactly the functionality and exactly the data needed by the UI. The end result is a simpler application.
 
-*A part of the [series Nettbutikk Team's Experiences and Experiments](/tech-blog/tags/nettbutikk)*
+*A part of the [series Nettbutikk Team's Experiences and Experiments](/tags/nettbutikk)*
 
 We are trying to adopt this as our approach because it is so sensible. Whenever we work with an API that wasn’t designed with the actual client needs in mind, we experience unnecessary friction and have to do various workarounds and adaptations so front-end-first absolutely makes sense to us. (E.g. when working with a REST API designed in line with REST principles – but not with our needs, resulting in a too chatty communication and more complex code.)
 

@@ -43,7 +43,7 @@ gulp.task('scripts', ['clean'], scripts);
 gulp.task('scripts-watch', scripts);
 
 gulp.task('deploy', function() {
-  return gulp.src('./build/**/*')
+  return gulp.src(['./build/**/*', './CNAME'])
     .pipe(ghPages());
 });
 

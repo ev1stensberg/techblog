@@ -15,7 +15,7 @@ we have been replacing the legacy webshop one tiny bit at a time. I also hope
 to share my continual amazement at how much work can be postponed to be able to
 deliver a "feature" early.
 
-*A part of the [series Nettbutikk Team's Experiences and Experiments](/tech-blog/tags/nettbutikk)*
+*A part of the [series Nettbutikk Team's Experiences and Experiments](/tags/nettbutikk)*
 
 ([See Extreme minimalism: Replacing shop.netcom one tiny bit at a time at Vimeo](https://vimeo.com/145011983) (10 min).)
 

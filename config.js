@@ -1,8 +1,8 @@
 var config = {
   production: {
-    baseUrl: process.env.BASE_URL || '/tech-blog', // '' for relative links
+    baseUrl: '', // '' for relative links
     site: {
-      url: process.env.SITE_URL || 'http://teliasonera.github.io/tech-blog', // full site url
+      url: process.env.SITE_URL || 'http://teliasonera.github.io', // full site url
       title: 'TeliaSonera TechBlog',
       googleAnalytics: 'UA-65719787-2'
     }

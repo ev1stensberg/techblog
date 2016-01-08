@@ -11,7 +11,7 @@ proper user experience and interface design – talk to real users, collect feed
 design based on data, not just hypotheses and gut feeling. To do this, he needs us
 to slow down.
 
-*A part of the [series Nettbutikk Team's Experiences and Experiments](/tech-blog/tags/nettbutikk)*
+*A part of the [series Nettbutikk Team's Experiences and Experiments](/tags/nettbutikk)*
 
 We see a common human "mistake" here: where the expression of a genuine need gets mixed in with a suggestion for satisfying it. We are happy to learn about the need and will do our best to satisfy it (after all, we want everybody to be happy, and we too love
 evidence-based design) but we want to challenge the proposed solution. There is never
