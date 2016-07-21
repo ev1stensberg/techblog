@@ -1,86 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:8000/</loc>
+        <loc>http://teliasonera.github.io/</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/projects</loc>
+        <loc>http://teliasonera.github.io/projects</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/styleguide</loc>
+        <loc>http://teliasonera.github.io/styleguide</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/blog/afternoon-hack</loc>
+        <loc>http://teliasonera.github.io/blog/afternoon-hack</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/blog/upgrade-or-not-to-upgrade-the-eternal-dilemma</loc>
+        <loc>http://teliasonera.github.io/blog/today-we-write-the-legacy-code-of-tomorrow</loc>
+        <lastmod>2016-07-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://teliasonera.github.io/blog/upgrade-or-not-to-upgrade-the-eternal-dilemma</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/blog/nettbutikk-the-no-status-standup-experiment</loc>
+        <loc>http://teliasonera.github.io/blog/nettbutikk-the-no-status-standup-experiment</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</loc>
+        <loc>http://teliasonera.github.io/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</loc>
+        <loc>http://teliasonera.github.io/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/posts/post-7-process</loc>
+        <loc>http://teliasonera.github.io/posts/post-7-process</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/blog/moving-too-fast-for-ux-genuine-needs-wrong-solutions</loc>
+        <loc>http://teliasonera.github.io/blog/moving-too-fast-for-ux-genuine-needs-wrong-solutions</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/blog/why-we-practice-fronted-first-design-instead-of-api-first</loc>
+        <loc>http://teliasonera.github.io/blog/why-we-practice-fronted-first-design-instead-of-api-first</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/blog/1/index.html</loc>
-        <lastmod>2016-01-08</lastmod>
+        <loc>http://teliasonera.github.io/blog/1/index.html</loc>
+        <lastmod>2016-07-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/blog/index.html</loc>
-        <lastmod>2016-01-08</lastmod>
+        <loc>http://teliasonera.github.io/blog/index.html</loc>
+        <lastmod>2016-07-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:8000/blog/2/index.html</loc>
-        <lastmod>2016-01-08</lastmod>
+        <loc>http://teliasonera.github.io/blog/2/index.html</loc>
+        <lastmod>2016-07-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
