@@ -3,7 +3,7 @@ var config = {
     baseUrl: '', // '' for relative links
     site: {
       url: process.env.SITE_URL || 'http://teliasonera.github.io', // full site url
-      title: 'TeliaSonera TechBlog',
+      title: 'Telia TechBlog',
       googleAnalytics: 'UA-65719787-2'
     }
   },
@@ -11,7 +11,7 @@ var config = {
     baseUrl: process.env.DEV_BASE_URL || '', // '' for relative links
     site: {
       url: process.env.DEV_SITE_URL || 'http://localhost:8000', // full site url
-      title: 'TeliaSonera TechBlog',
+      title: 'Telia TechBlog',
       googleAnalytics: process.env.DEV_GOOGLE_ANALYTICS || '123456'
     }
   },

@@ -180,6 +180,6 @@ developers after all, we love automation!)
 
 * [Work with me!](https://netcom.no/disrupt-us)
 * Contanct me at Twitter [@HolyJak](https://twitter.com/HolyJak)
-* Learn more about our journey at the [TeliaSonera Tech Blog](teliasonera.github.io/tech-blog/)
+* Learn more about our journey at the [Telia Tech Blog](teliasonera.github.io/tech-blog/)
 
 Thank you!

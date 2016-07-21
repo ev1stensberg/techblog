@@ -5,4 +5,4 @@ priority: 3
 linkTitle: About
 ---
 
-This is the TechBlog of TeliaSonera
+This is the TechBlog of Telia Norway.
