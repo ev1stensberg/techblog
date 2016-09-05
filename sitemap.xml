@@ -7,14 +7,14 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://techblog.telia.no/styleguide</loc>
-        <lastmod>2016-01-08</lastmod>
+        <loc>http://techblog.telia.no/projects</loc>
+        <lastmod>2016-07-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://techblog.telia.no/projects</loc>
-        <lastmod>2016-07-21</lastmod>
+        <loc>http://techblog.telia.no/styleguide</loc>
+        <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
