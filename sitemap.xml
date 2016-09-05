@@ -31,6 +31,12 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>http://teliasonera.github.io/blog/the-telia-identity-api</loc>
+        <lastmod>2016-09-05</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>http://teliasonera.github.io/blog/upgrade-or-not-to-upgrade-the-eternal-dilemma</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
@@ -74,19 +80,19 @@
     </url>
     <url>
         <loc>http://teliasonera.github.io/blog/1/index.html</loc>
-        <lastmod>2016-08-19</lastmod>
+        <lastmod>2016-09-05</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://teliasonera.github.io/blog/index.html</loc>
-        <lastmod>2016-08-19</lastmod>
+        <lastmod>2016-09-05</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://teliasonera.github.io/blog/2/index.html</loc>
-        <lastmod>2016-08-19</lastmod>
+        <lastmod>2016-09-05</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
