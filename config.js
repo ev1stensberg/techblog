@@ -2,7 +2,7 @@ var config = {
   production: {
     baseUrl: '', // '' for relative links
     site: {
-      url: process.env.SITE_URL || 'http://teliasonera.github.io', // full site url
+	    url: process.env.SITE_URL || 'http://techblog.telia.no/', // full site url
       title: 'Telia TechBlog',
       googleAnalytics: 'UA-65719787-2'
     }
@@ -16,7 +16,7 @@ var config = {
     }
   },
   social: {
-    github_username: 'teliasonera',
+    github_username: 'teliasoneranorge',
     stackoverflow_id: '',
     twitter_username: '',
     google_plus_id: '',
