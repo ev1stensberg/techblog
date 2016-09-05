@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://teliasonera.github.io/</loc>
+        <loc>http://techblog.telia.no/</loc>
         <lastmod>2016-07-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/projects</loc>
-        <lastmod>2016-07-21</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>http://teliasonera.github.io/styleguide</loc>
+        <loc>http://techblog.telia.no/styleguide</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/afternoon-hack</loc>
+        <loc>http://techblog.telia.no/projects</loc>
         <lastmod>2016-07-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/today-we-write-the-legacy-code-of-tomorrow</loc>
+        <loc>http://techblog.telia.no/blog/afternoon-hack</loc>
+        <lastmod>2016-07-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://techblog.telia.no/blog/today-we-write-the-legacy-code-of-tomorrow</loc>
         <lastmod>2016-07-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/the-telia-identity-api</loc>
+        <loc>http://techblog.telia.no/blog/the-telia-identity-api</loc>
         <lastmod>2016-09-05</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/upgrade-or-not-to-upgrade-the-eternal-dilemma</loc>
+        <loc>http://techblog.telia.no/blog/upgrade-or-not-to-upgrade-the-eternal-dilemma</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/nettbutikk-the-no-status-standup-experiment</loc>
+        <loc>http://techblog.telia.no/blog/nettbutikk-the-no-status-standup-experiment</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</loc>
+        <loc>http://techblog.telia.no/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</loc>
+        <loc>http://techblog.telia.no/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</loc>
         <lastmod>2016-09-05</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/posts/post-7-process</loc>
+        <loc>http://techblog.telia.no/posts/post-7-process</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/moving-too-fast-for-ux-genuine-needs-wrong-solutions</loc>
+        <loc>http://techblog.telia.no/blog/moving-too-fast-for-ux-genuine-needs-wrong-solutions</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/why-we-practice-fronted-first-design-instead-of-api-first</loc>
+        <loc>http://techblog.telia.no/blog/why-we-practice-fronted-first-design-instead-of-api-first</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/1/index.html</loc>
+        <loc>http://techblog.telia.no/blog/1/index.html</loc>
         <lastmod>2016-09-05</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/index.html</loc>
+        <loc>http://techblog.telia.no/blog/index.html</loc>
         <lastmod>2016-09-05</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://teliasonera.github.io/blog/2/index.html</loc>
+        <loc>http://techblog.telia.no/blog/2/index.html</loc>
         <lastmod>2016-09-05</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
