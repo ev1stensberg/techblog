@@ -17,6 +17,7 @@
         <p class="post-summary">
           {{post.excerpt | safe}}
         </p>
+	<p class="post-read-rest"><a href="{{baseUrl}}/{{post.path}}">Read the rest of this entry...</a></p>
         <span class="post-meta small">
         {% for tag in post.tags %}<a href="{{baseUrl}}/tags/{{tag | replace(' ', '-')}}" title="{{tag}}">{{tag}}</a>{% if !loop.last %}, {% endif %}{% endfor %}
         </span>
