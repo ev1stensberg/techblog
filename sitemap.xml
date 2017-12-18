@@ -37,6 +37,12 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>http://techblog.telia.no/blog/experience-awesome-productivity-with-clojurescript-s-repl</loc>
+        <lastmod>2017-12-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>http://techblog.telia.no/blog/upgrade-or-not-to-upgrade-the-eternal-dilemma</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
@@ -80,19 +86,25 @@
     </url>
     <url>
         <loc>http://techblog.telia.no/blog/1/index.html</loc>
-        <lastmod>2016-09-05</lastmod>
+        <lastmod>2017-12-18</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://techblog.telia.no/blog/index.html</loc>
-        <lastmod>2016-09-05</lastmod>
+        <lastmod>2017-12-18</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://techblog.telia.no/blog/2/index.html</loc>
-        <lastmod>2016-09-05</lastmod>
+        <lastmod>2017-12-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://techblog.telia.no/blog/3/index.html</loc>
+        <lastmod>2017-12-18</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
