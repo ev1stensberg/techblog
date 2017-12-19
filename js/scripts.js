@@ -1,1 +1,1 @@
-!function(o,l,n){console.log("ello world!")}(window,document);
+!function(n,o,c){}(window,document);
