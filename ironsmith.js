@@ -1,5 +1,6 @@
 var Metalsmith = require('metalsmith');
 var metadata = require('metalsmith-metadata');
+var debug = require('metalsmith-debug');
 var excerpts = require('metalsmith-better-excerpts');
 var feed = require('metalsmith-feed');
 var writemetadata = require('metalsmith-writemetadata');
@@ -105,6 +106,7 @@ module.exports = function (production) {
       }
     }))
     .use(htmlMinifier())
+    //.use(debug())
     .destination('build/')
     .build(function(err,files){
       if (err){ console.log(err); }
