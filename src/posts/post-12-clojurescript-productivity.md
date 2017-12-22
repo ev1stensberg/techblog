@@ -32,6 +32,6 @@ I believe that some people might have managed to get close to the ClojureScript 
 
 My experience is that the cycle of problem discovery - troubleshooting - fix is much shorter in Clojure and ClojureScript thanks to the REPL. And when you really adopt REPL-driven development, you actually have to deal with troubleshooting problems much less since you produce small, working code changes.
 
-To be frank, there are also some downsides. I will write about the reasons for picking Clojure(Script) and the benefits and drawbacks we have experienced in a future article.
+To be frank, there are also some downsides. You can read about the reasons for picking Clojure(Script) and the benefits and drawbacks we have considered and experienced in [From JavaScript to Clojure(Script): Writing a webshop, again](/blog/from-javascript-to-clojure-script-writing-a-webshop-again/).
 
 _(You might want to read other posts from [our rebellious product development series](/tags/nettbutikk))_
