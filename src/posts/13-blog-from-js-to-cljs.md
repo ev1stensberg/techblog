@@ -10,6 +10,8 @@ In which I explain why Norway's second largest mobile operator is experimenting 
 
 _Aside - about us: [Telia Norge](https://telia.no) is Norway's second largest mobile operator. Our team is responsible for serving its customers who want to buy subscriptions or hardware (phones, tablets, routers, and accessories) without attending a physical shop._
 
+_**Updated** on Jan 9th - added "easier to get help"_
+
 ## Background
 
 Three years ago, a small team of experienced developers with an agile and rebellious mindset has been hired for an experiment. The hypothesis was that such a team, sitting together with the business, could increase conversion rates and profitability of the company webshop by enabling rapid development and implementation of business ideas/hypotheses/experiments, tailoring the webshop for what customers needed and wanted. Replacing a webshop from scratch is no simple task but we proceeded one page at a time and the experiment concluded as a glaring success earlier than planned, turning over to a regular product development. A year and something later, we could finally pull the plug on the old webshop.
@@ -34,6 +36,7 @@ Pros:
 1. skillset
 1. powerful language - immutable data and data manipulation library, macros, much more "good parts" than "bad parts", less code - fewer bugs
 1. JVM
+1. easier to get help
 
 Cons:
 
@@ -58,6 +61,8 @@ Cons:
 **Powerful language - immutable data, data manipulation, macros, great design** are some of the often highlighted strengths of Clojure(Script). We already use seamless-immutable to decrease defect likelihood, however imperfect it is by definition, being added to a deeply mutable language, and we use Lodash extensively when processing data. Clojure gives us a much better alternatives to both. We can limit boilerplate through the all-powerful macros (that, hopefully, somebody else has written :-)). And, last but not least, Clojure is a language with a very well thought-through design, whose pieces generally fit very well together. It is not perfect, but few have got closer to perfection so far. That is contrary to JavaScript, whose design - despite some great ideas - is somewhat messy and that keeps growing somewhat organically. [Clojure codebases reportedly tend to be visibly smaller](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-e1cb62fd526c) than those in Java or JavaScript, and code size is one of the key factors determining the amount of defects, so we can hope we will get a lower defect rate.
 
 **JVM** Personally, I believe that JVM has superior monitoring and observability capabilities to Node, though I am obviously biased by me experience. So I prefer to have that on the server-side.
+
+**Easier to get help** - Clojure(Script) has a very active and helpful community. When I have a Java or JavaScript problem, I can ask at StackOverflow. With Clojure I can also ask at its awesome [mailing list](https://groups.google.com/d/forum/clojure) (frequented by core developers and all famous people and creators) and, for even a more timely advice, use the [Clojurians Slack](clojurians.slack.com) instant messaging (with channels devoted also to individual libraries and tools, frequented by the authors). It has never disappointed me (and I learn a lot by following them).
 
 #### Cons
 
