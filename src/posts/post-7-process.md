@@ -1,5 +1,5 @@
 ---
-draft:true
+draft: true
 title: TODO - XXX Nettbutikk process
 template: post.html
 date: 2015-11-03
@@ -22,4 +22,4 @@ tags: nettbutikk, product development, lean, process, methodology
 ## Values
 
 * Challenge established practices and truths - especially our own
-* Minimalism - process, lib/tool skepticism 
+* Minimalism - process, lib/tool skepticism
