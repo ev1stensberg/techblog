@@ -25,6 +25,18 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>http://techblog.telia.no/blog/pains-with-terraform-perhaps-use-sceptre-next-time</loc>
+        <lastmod>2018-03-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://techblog.telia.no/blog/why-we-love-aws-beanstalk-but-are-leaving-it-anyway</loc>
+        <lastmod>2018-02-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>http://techblog.telia.no/blog/afternoon-hack</loc>
         <lastmod>2016-07-21</lastmod>
         <changefreq>daily</changefreq>
@@ -73,12 +85,6 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://techblog.telia.no/posts/post-7-process</loc>
-        <lastmod>2016-01-08</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
         <loc>http://techblog.telia.no/blog/moving-too-fast-for-ux-genuine-needs-wrong-solutions</loc>
         <lastmod>2016-01-08</lastmod>
         <changefreq>daily</changefreq>
@@ -92,25 +98,25 @@
     </url>
     <url>
         <loc>http://techblog.telia.no/blog/1/index.html</loc>
-        <lastmod>2018-01-09</lastmod>
+        <lastmod>2018-03-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://techblog.telia.no/blog/index.html</loc>
-        <lastmod>2018-01-09</lastmod>
+        <lastmod>2018-03-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://techblog.telia.no/blog/2/index.html</loc>
-        <lastmod>2018-01-09</lastmod>
+        <lastmod>2018-03-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>http://techblog.telia.no/blog/3/index.html</loc>
-        <lastmod>2018-01-09</lastmod>
+        <lastmod>2018-03-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
