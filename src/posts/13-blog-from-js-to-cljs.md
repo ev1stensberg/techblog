@@ -107,6 +107,8 @@ Our team is in a unique position as we have multiple people - possibly 100% of t
 
 So far, the past few weeks, has our experience been very positive.
 
+_Update: You can read about our experiences with hiring in [Experience Report: Hiring for Clojure(Script) is Easy](/blog/experience-report-hiring-for-clojure-script-is-easy/)_
+
 ## Appendix: Our stack
 
 We have selected Reagent (react wrapper) and re-frame (change+state handling, derived state). This combination is battle-tested, mature, and popular. Reagent is attractive because it requires zero boilerplate, you just write functions with Hiccup data to create components, so it is much easier to sell to developers than Om. Re-frame is also quite close to Redux and thus easier to understand for a team used to Redux. The main disadvantage is that there is no native server-side rendering (which might be important for us); people solve it by running the code on the JVM's JavaScript engine or by running it on Node.js. There are also rough edges around usage with DevCards due to the reliance on global state.
