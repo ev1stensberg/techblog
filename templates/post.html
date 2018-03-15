@@ -4,7 +4,7 @@
 <div class="post">
   <header class="post-header mb2">
     <h1> {{ title }}</h1>
-    <span class="post-meta">{{ date | date('M j, Y') }}</span><br>
+    <span class="post-meta">By {{ author }} on {{ date | date('M j, Y') }}</span><br>
     <span class="post-meta small">
     {% for tag in tags %}<a href="{{baseUrl}}/tags/{{tag | replace(' ', '-')}}" title="{{tag}}">{{tag}}</a>{% if !loop.last %}, {% endif %}{% endfor %}
     </span>
