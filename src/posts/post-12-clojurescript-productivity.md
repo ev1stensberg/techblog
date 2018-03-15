@@ -3,7 +3,7 @@ title: "Experience: Awesome productivity with ClojureScript's REPL"
 template: post.html
 date: 2017-12-18
 author: Jakub Holý
-tags: nettbutikk, b2b, clojurescript
+tags: nettbutikk, b2b, clojurescript, clojure
 ---
 
 What's the deal with ClojureScript? How can you justify picking such a "niche" language? I have recently experienced a "wow" session, demonstrating the productivity gains of ClojureScript and the interactive development it enables thanks to its REPL. I would like to share the experience with you. (If you have never heard about it before - it is a modern, very well designed Lisp that compiles to JavaScript for frontend and backend development. It comes with a REPL that makes it possible to reload code changes and run code in the context of your live application, developing it while it is running.)

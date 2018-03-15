@@ -3,7 +3,7 @@ title: "From JavaScript to Clojure(Script): Writing a webshop, again"
 template: post.html
 date: 2017-12-22
 author: Jakub Holý
-tags: nettbutikk, b2b, clojurescript
+tags: nettbutikk, b2b, clojurescript, clojure
 ---
 
 In which I explain why Norway's second largest mobile operator is experimenting with using Clojure and ClojureScript instead of Node and JavaScript for its new webshop and what the experience has been so far.
