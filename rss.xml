@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Telia TechBlog]]></title><description><![CDATA[Telia TechBlog]]></description><link>http://techblog.telia.no/</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 14 Mar 2018 15:15:56 GMT</lastBuildDate><atom:link href="http://techblog.telia.no/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Why we love AWS Beanstalk but are leaving it anyway]]></title><description><![CDATA[<p>We have had our mission-critical webapp running on <a href="https://aws.amazon.com/elasticbeanstalk/">AWS Elastic Beanstalk</a> for three years and have been extremely happy with it. However we have now outgrown it and move to a manually managed infrastructure and CodeDeploy.</p>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Telia TechBlog]]></title><description><![CDATA[Telia TechBlog]]></description><link>http://techblog.telia.no/</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 15 Mar 2018 11:56:37 GMT</lastBuildDate><atom:link href="http://techblog.telia.no/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Experience Report: Hiring for Clojure(Script) is Easy]]></title><description><![CDATA[<p>Our experience shows that hiring people for a Clojure(Script) project is relatively easy (in Oslo, Norway) despite a market where demand exceeds supply. But it is important to use the right channels to reach the right people.</p>
+<p>As I have written previously in <a href="/blog/from-javascript-to-clojure-script-writing-a-webshop-again/">From JavaScript to Clojure(Script): Writing a webshop, again</a>, we have started a new project based on Clojure an ClojureScript. I hypothesised that hiring people knowing or willing to use these languages will be easier than hiring for Java. Others were sceptical so, in the best tradition of our team, we decided to resolve the dispute with an experiment. If we managed to get sufficient positive response and (start to) hire one full-time employee within 2 weeks then we would proceed with this language choice.</p>
+<p>We have published <a href="https://groups.google.com/d/topic/clojure/rfFEM17pHJo/discussion">the announcement</a> via the international Clojure mailing list, the <a href="https://clojurians.slack.com/messages/C061XGG1W/">#clojure-norway Slack channel</a>, the <a href="https://www.meetup.com/Oslo-Clojure-Meetup/">Oslo Clojure Meetup</a>, and via <a href="https://www.finn.no/job/employer/company/178">Finn Jobs</a>, a local job-finding site.</p>
+<h3 id="the-results">The results</h3>
+<p>We got about 15 local candidates within a very short time. A few with production Clojure(Script) experience, most with hobby experience, a few with none. A few of them were really experienced people. All wanted to join us because of our language choice. All seemed quite passionate.</p>
+<p>All but one came from the Oslo Clojure Meetup. The international mailing list yielded one candidate plus a few foreigners willing to move to Norway (if we provided visa sponsorship) and a few people from Norway living outside of Oslo (and not willing to move).</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>The <a href="https://blog.iterate.no/2013/04/18/economies-of-scala/">economies of Scala</a> hypothesis, i.e. that it is easier to hire for a niche language with passionate user base than for a mainstream language, seems to hold. But it is crucial to use the right channels to reach relevant people.</p>
+]]></description><link>http://techblog.telia.no/blog/experience-report-hiring-for-clojure-script-is-easy</link><guid isPermaLink="true">http://techblog.telia.no/blog/experience-report-hiring-for-clojure-script-is-easy</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Thu, 15 Mar 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Why we love AWS Beanstalk but are leaving it anyway]]></title><description><![CDATA[<p>We have had our mission-critical webapp running on <a href="https://aws.amazon.com/elasticbeanstalk/">AWS Elastic Beanstalk</a> for three years and have been extremely happy with it. However we have now outgrown it and move to a manually managed infrastructure and CodeDeploy.</p>
 <p>AWS Beanstalk provides you with lot of bang for the buck and enables you to get up and running in no time:</p>
 <ul>
 <li>Simple, no-downtime deployment and automatic roll-back based on user-provided health-check (either one subset of nodes at a time or blue-green deployment)</li>
@@ -358,7 +366,22 @@ developers after all, we love automation!)</p>
 <li>Learn more about our journey at the <a href="http://techblog.telia.no/">Telia Tech Blog</a></li>
 </ul>
 <p>Thank you!</p>
-]]></description><link>http://techblog.telia.no/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</link><guid isPermaLink="true">http://techblog.telia.no/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Tue, 03 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introducing the Series Nettbutikk Team's Experiences and Experiments]]></title><description><![CDATA[<p><em>A part of the <a href="/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
+]]></description><link>http://techblog.telia.no/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</link><guid isPermaLink="true">http://techblog.telia.no/blog/extreme-minimalism-replacing-shop-netcom-no-one-tiny-bit-at-a-time-smidig-2015-transcript</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Tue, 03 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Nettbutikk: The No Status Standup Experiment]]></title><description><![CDATA[<p><em>A part of the <a href="/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
+<p>The Nettbutikk team likes to challenge all established truths. Jakob Lind has
+come with with an excellent question: do we need standups? Do we all need to
+stand in front of our Kanban board and discuss what was and will be, especially
+since we often already know that, thanks to communication all the time?</p>
+<p>We have agreed to keep the standups but to limit them to:</p>
+<ol>
+<li>A brief review of what has been deployed to production the previous day</li>
+<li>Any blockers, problems, and requests for help</li>
+</ol>
+<p>i.e. skipping the reporting of the status of tasks if they progress &quot;according
+to the plan&quot; and there is nothing noteworthy about them. Of course participants
+can ask, if they want to know. And they should do so, if they e.g. feel a task is
+taking too long.</p>
+<p>Minimalism for the win!</p>
+]]></description><link>http://techblog.telia.no/blog/nettbutikk-the-no-status-standup-experiment</link><guid isPermaLink="true">http://techblog.telia.no/blog/nettbutikk-the-no-status-standup-experiment</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Introducing the Series Nettbutikk Team's Experiences and Experiments]]></title><description><![CDATA[<p><em>A part of the <a href="/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
 <p>We are starting a new blog series tracking the experiences and (process)
 experiments of the team behind <a href="https://nettbutikk.netcom.no">nettbutikk.netcom.no</a>.
 This is the best product development process and team I have ever part of and
@@ -418,22 +441,7 @@ handled the increased load formidably (contrary to some backend systems, sadly).
 the lean way. Yet they have different background and approaches. The similarities
 give us a strong push towards minimalism and getting stuff out, while the
 differences spark valuable discussions and lead to a much better process and code.</p>
-]]></description><link>http://techblog.telia.no/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</link><guid isPermaLink="true">http://techblog.telia.no/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Nettbutikk: The No Status Standup Experiment]]></title><description><![CDATA[<p><em>A part of the <a href="/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
-<p>The Nettbutikk team likes to challenge all established truths. Jakob Lind has
-come with with an excellent question: do we need standups? Do we all need to
-stand in front of our Kanban board and discuss what was and will be, especially
-since we often already know that, thanks to communication all the time?</p>
-<p>We have agreed to keep the standups but to limit them to:</p>
-<ol>
-<li>A brief review of what has been deployed to production the previous day</li>
-<li>Any blockers, problems, and requests for help</li>
-</ol>
-<p>i.e. skipping the reporting of the status of tasks if they progress &quot;according
-to the plan&quot; and there is nothing noteworthy about them. Of course participants
-can ask, if they want to know. And they should do so, if they e.g. feel a task is
-taking too long.</p>
-<p>Minimalism for the win!</p>
-]]></description><link>http://techblog.telia.no/blog/nettbutikk-the-no-status-standup-experiment</link><guid isPermaLink="true">http://techblog.telia.no/blog/nettbutikk-the-no-status-standup-experiment</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Upgrade or not to upgrade? The eternal dilemma]]></title><description><![CDATA[<p><em>A part of the <a href="/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
+]]></description><link>http://techblog.telia.no/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</link><guid isPermaLink="true">http://techblog.telia.no/blog/introducing-the-series-nettbutikk-team-s-experiences-and-experiments</guid><dc:creator><![CDATA[Jakub Holý]]></dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 GMT</pubDate></item><item><title><![CDATA[Upgrade or not to upgrade? The eternal dilemma]]></title><description><![CDATA[<p><em>A part of the <a href="/tags/nettbutikk">series Nettbutikk Team&#39;s Experiences and Experiments</a></em></p>
 <p>Handling dependencies is one of important challenges in any software project -
 and especially in the fast-moving JavaScript world. Our
 <a href="nettbutikk.netcom.no">Nettbutikk</a> team just had a heated discussion about
