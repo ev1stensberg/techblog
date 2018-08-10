@@ -11,19 +11,19 @@ excerpt_separator: <!--more-->
 
 When shifting one of our applications towards Client Side Rendering from Server Side, performance became important. With Server Side Rendering, there was no thought around how the user percieved our application, as the browser wasn't rendering content on the fly, our server did.
 
-Since then, we have moved towards a Client Sided approach to make user experience better. The stack is now using ReactJS, Laravel and VueJS. The mixture between a Server Side Library and two Client Side Libraries, made it reasonable to think that the application had opportunities to improve.
+Since then, we have moved towards a Client Side approach to make user experience better. The stack is now using ReactJS, Laravel and VueJS. The mixture between a Server Side Library and two Client Side Libraries, made it reasonable to think that the application had opportunities to improve.
  
-When developing applications, many developers think that performance is a field of its own. It certainly is, and the major amount of the time a developer spends on performance isn't necessarily around making optimizations. That being said, some of the optimizations we had, was already in reach. Libaries themselves had embeded production settings.
+When developing applications, many developers think that performance is a field of its own. It certainly is, and the majority of the time a developer spends on performance isn't necessarily around making optimizations. That being said, some of the optimizations we had were already in reach. Libraries themselves had embedded production settings.
 
 To build our entire application, we use a combination of webpack, (PHP) composer and gulp. We chose webpack because it is stable. The tool is useful for optimizing code and abstracting source code into smaller pieces of code (chunks). To build global stylesheets, webpack wasn't as useful as gulp is. In addition to these two, a part of our stack is written in [Laravel](https://laravel.com/), which would need to use our generated chunks and CSS.
 
 #### Performance budgets
 
-With no prior work on performance, we did not have a estimated budget. When starting to optimize your application, a estimated bundle size and a goal to work towards is important, not is it only motivational, but it gives an indication of how small the application needs to be in order to be fast. U.S Web design system has a [primer website](https://designsystem.digital.gov/performance/how/) to get you started with perf budgets that makes sense.
+With no prior work on performance, we did not have a estimated budget. When starting to optimize your application, an estimated bundle size and a goal to work towards is important. Not is it only motivational, but it also gives an indication of how small the application needs to be in order to be fast. U.S Web design system has a [primer website](https://designsystem.digital.gov/performance/how/) to get you started with perf budgets that makes sense.
 
 #### Lighthouse, Performance Analyzer Tools
 
-[Lighthouse](https://developers.google.com/web/tools/lighthouse/) has helped the team to find out where performance optimizations was needed. It provided us insight on where and how to improve and has been a helpful tool for us. Another great resource is the opportunity to analyze generated javascript files, what is commonly refered to as bundles. By using [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer#webpack-bundle-analyzer) we found duplicate  code that we could have abstracted to chunks containing this code. 
+[Lighthouse](https://developers.google.com/web/tools/lighthouse/) has helped the team to find out where performance optimizations were needed. It provided us insight on where and how to improve and has been a helpful tool for us. Another great resource is the opportunity to analyze generated JavaScript files - commonly referred to as bundles. By using [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer#webpack-bundle-analyzer) we found duplicate  code that we could have abstracted to chunks containing this code. 
 
 We also used [webpagetest](https://webpagetest.org/) to measure speed index and general website stats in order to get an estimate of our performance budget. Snapshots of things like First Meaningful Paint and Time To First Byte became a valueable label for our measurements.
 
@@ -53,11 +53,11 @@ ReactDOM.render(<LoadableComponent />, mountNode);
 
 #### Managing non-JS frameworks with chunk splitting
 
-Making sure that a PHP library complies with a JavaScript wasn't as hard as one might think. The major blocker when using a PHP library with a JavaScript library was to make sure that performance wasn't suffering. A hybrid application, using server side rendering and client side rendering has the potential to scale well if done right. 
+Making sure that a PHP library complies with a JavaScript library wasn't as hard as one might think. The major blocker when using a PHP library with a JavaScript library was to make sure that performance wasn't suffering. A hybrid application, using server side rendering and client side rendering has the potential to scale well if done right. 
 
 That might sound easy, but it wasn't. An issue we faced early was using webpack with chunk splitting to save loading times for assets compiled in JavaScript. Laravel has a built in library named laravel-mix, which did the same thing as webpack-manifest-plugin. The difference between the two is not that much, with the execption being Laravel setting defaults and a near production ready configuration. Laravel mix is easy to implement, but it does not scale well with advanced builds where you would want full control over resource management. Both libraries supported a key to value pair, mapping a bundle name to a hash for a new bundle, which is what we were trying to do.
 
-Webpack as a stand alone build tool was preferable. For instance, Laravel used an older version of webpack (v3). Webpack v4 had some major performance improvements and that alone was a reason to make an own build step for us. Laravel didn't allow Service Workers either, so offline first websites would have been harder to implement without having a direct access to a webpack configuration to set plugins and modifying assets. 
+Webpack as a stand alone build tool was preferable. For instance, Laravel used an older version of webpack (v3). Webpack v4 had some major performance improvements and that alone was a reason to make a custom build step for us. Laravel didn't allow Service Workers either, so offline first websites would have been harder to implement without having a direct access to a webpack configuration to set plugins and modifying assets. 
 
 When auditing performance using lighthouse, the tradeoff between server response and Time To First Byte is essential. In our application, we did not have the landing page client-side, which would mean that performance and following the PRPL pattern did not follow best practise for performance.
 
