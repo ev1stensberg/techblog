@@ -2,7 +2,7 @@
 template: post.html
 title: "From O(4G) to O(ffline) - Lessons learned from performance"
 description: >
-    One of our applications was slow, so we decided to make invest time in performance.
+    One of our applications was slow, so we decided to invest time in performance.
 date: 2018-08-09
 author: Even Stensberg
 tags: FrontEnd, Performance
@@ -12,12 +12,10 @@ excerpt_separator: <!--more-->
 When shifting one of our applications towards Client Side Rendering from Server Side, performance became important. With Server Side Rendering, there was no thought around how the user percieved our application, as the browser wasn't rendering content on the fly, our server did.
 
 Since then, we have moved towards a Client Sided approach to make user experience better. The stack is now using ReactJS, Laravel and VueJS. The mixture between a Server Side Library and two Client Side Libraries, made it reasonable to think that the application had opportunities to improve.
+ 
+When developing applications, many developers think that performance is a field of its own. It certainly is, and the major amount of the time a developer spends on performance isn't necessarily around making optimizations. That being said, some of the optimizations we had, was already in reach. Libaries themselves had embeded production settings.
 
-When developing applications, many developers think that performance is a field of its own. It certainly is, and the major amount of the time a developer spends on performance isn't necessarily around performance, even though time should be allocated for it. 
-
-When starting with performance optimizations, some optimizations we gained was already in reach as libaries themselves had embeded production settings. To build our entire application, we use a combination of webpack, (PHP) composer and gulp.
-
-We chose webpack because it is stable. The tool is useful for optimizing code and splitting source code in smaller pieces of code (chunks). To build global stylesheets, webpack wasn't as useful as gulp is. In addition to these two, a part of our stack is written in [Laravel](https://laravel.com/), which would need to use our generated chunks and CSS.
+To build our entire application, we use a combination of webpack, (PHP) composer and gulp. We chose webpack because it is stable. The tool is useful for optimizing code and abstracting source code into smaller pieces of code (chunks). To build global stylesheets, webpack wasn't as useful as gulp is. In addition to these two, a part of our stack is written in [Laravel](https://laravel.com/), which would need to use our generated chunks and CSS.
 
 #### Performance budgets
 
