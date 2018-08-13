@@ -9,9 +9,9 @@ tags: FrontEnd, Performance
 excerpt_separator: <!--more-->
 ---
 
-When shifting one of our applications towards Client Side Rendering from Server Side, performance became important. With Server Side Rendering, there was no thought around how the user percieved our application, as the browser wasn't rendering content on the fly, our server did.
+When  shifting one of our applications towards client-side rendering from server-side, performance became important. With server-side rendering, there was no thought around how the user percieved our application.
 
-Since then, we have moved towards a Client Side approach to make user experience better. The stack is now using ReactJS, Laravel and VueJS. The mixture between a Server Side Library and two Client Side Libraries, made it reasonable to think that the application had opportunities to improve.
+Since then, we have moved towards a client-side approach to make user experience better. The stack is now using ReactJS, Laravel and VueJS. The mixture between a server-side library and two client-side libraries, made it reasonable to think that the application had opportunities to improve.
  
 When developing applications, many developers think that performance is a field of its own. It certainly is, and the majority of the time a developer spends on performance isn't necessarily around making optimizations. That being said, some of the optimizations we had were already in reach. Libraries themselves had embedded production settings.
 
@@ -53,15 +53,15 @@ ReactDOM.render(<LoadableComponent />, mountNode);
 
 #### Managing non-JS frameworks with chunk splitting
 
-Making sure that a PHP library complies with a JavaScript library wasn't as hard as one might think. The major blocker when using a PHP library with a JavaScript library was to make sure that performance wasn't suffering. A hybrid application, using server side rendering and client side rendering has the potential to scale well if done right. 
+Making sure that a PHP library complies with a JavaScript library wasn't as hard as one might think. The major blocker when using a PHP library with a JavaScript library was to make sure that performance wasn't suffering. A hybrid application, using server-side rendering and client-side rendering has the potential to scale well if done right. 
 
-That might sound easy, but it wasn't. An issue we faced early was using webpack with chunk splitting to save loading times for assets compiled in JavaScript. Laravel has a built in library named laravel-mix, which did the same thing as webpack-manifest-plugin. The difference between the two is not that much, with the execption being Laravel setting defaults and a near production ready configuration. Laravel mix is easy to implement, but it does not scale well with advanced builds where you would want full control over resource management. Both libraries supported a key to value pair, mapping a bundle name to a hash for a new bundle, which is what we were trying to do.
+That might sound easy, but it wasn't. An issue we faced early was using webpack with chunk splitting to save loading times for assets compiled in JavaScript. Laravel has a built-in library named laravel-mix, which did the same thing as webpack-manifest-plugin. The difference between the two is not that much, with the execption being Laravel setting defaults and a near production ready configuration. Laravel mix is easy to implement, but it does not scale well with advanced builds where you would want full control over resource management. Both libraries supported a key to value pair, mapping a bundle name to a hash for a new bundle, which is what we were trying to do.
 
 Webpack as a stand alone build tool was preferable. For instance, Laravel used an older version of webpack (v3). Webpack v4 had some major performance improvements and that alone was a reason to make a custom build step for us. Laravel didn't allow Service Workers either, so offline first websites would have been harder to implement without having a direct access to a webpack configuration to set plugins and modifying assets. 
 
-When auditing performance using lighthouse, the tradeoff between server response and Time To First Byte is essential. In our application, we did not have the landing page client-side, which would mean that performance and following the PRPL pattern did not follow best practise for performance.
+When auditing performance using Lighthouse, the tradeoff between server response and Time To First Byte is essential. In our application, we did not render the landing page on the client-side, which would mean that performance and following the PRPL pattern did not follow best practice for performance.
 
-This being said, switching to a hybrid application made room for us to gradually turn towards a more client-sided infrastructure while keeping performance within our performance budget. That is why performance budgets are good, with the intention of limiting your team to a goal that is not impossible; An application with a given stack might have a better starting point than another one with a legacy stack.
+This being said, switching to a hybrid application made room for us to gradually turn towards a more client-sided infrastructure while keeping performance within our performance budget. That is why performance budgets are good: they help to limit your team to a goal that is not impossible. It may have been that our technology stack, which contains some legacy, wasn't ideally suited for some optimizations. An application with a different stack might have had a better starting point than ours.
 
 
 #### Font, CSS & Image loading
@@ -72,16 +72,15 @@ By using `font-observer` we appended a className to display the fonts once they 
 
 #### CSS optimizations
 
-When optimizing CSS, we made sure that we used built in optimizations for css. Webpack and its plugins had built in performance. Webpack 4 has a plugin named `mini-css-extract-plugin`, which makes it possible for us to convert scss back to css files.
+When optimizing CSS, we made sure that we used built-in optimizations for CSS. Webpack and its plugins had built-in performance. Webpack 4 has a plugin named `mini-css-extract-plugin`, which makes it possible for us to convert SCSS back to CSS files.
 
 #### Offline first and Workbox
 
 We decided to cache JavaScript and CSS files using [workbox](https://developers.google.com/web/tools/workbox/). This was relatively easy and we got a simple service worker up quite quickly.
 
-
 #### Upgrading Babel and polyfills
 
-Babel is a great tool and has done great with respect to developer experience lately. We were able to add concepts like browser support through polyfills and tree shaking with the hardest thing being to install the correct dependency. With a full-configured front end build, we ended up with these babel packages.
+Babel is a great tool and has done great with respect to developer experience lately. We were able to add concepts like browser support (through polyfills) and tree shaking, with the hardest thing being to install the correct dependency. With a fully-configured front-end build, we ended up with these babel packages:
 
 
 ```json
@@ -117,7 +116,7 @@ Babel is a great tool and has done great with respect to developer experience la
 }
 ```
 
-Our webpack configuration ended (roughly) up like this:
+Our webpack configuration ended up (roughly) like this:
 
 
 `webpack.base.js`
@@ -356,11 +355,11 @@ We are experimenting with intelligent fetching of assets using [GuessJS](https:/
 
 #### Chunk splitting
 
-We didn't quite get chunk splitting to work, as our application is written in PHP. Each of the initial chunks needs to be included as a script in the index.php file. Turns out chunksplitting with the default rules didn't help us that much.
+We didn't quite get chunk splitting to work, as our application is written in PHP. Each of the initial chunks needs to be included as a script in the index.php file. It turns out that chunk splitting with the default rules didn't help us that much.
 
 #### Shorter CSS class names
 
-As length of CSS classes might be large, one way to ensure that the css file remains slim is to audit CSS using the coverage tab in chrome and to shorten class and id names. 
+As length of CSS classes might be large, one way to ensure that the CSS file remains slim is to audit CSS using the coverage tab in chrome and to shorten class and ID names. 
 
 #### Using Varnish to cache requests
 
@@ -368,19 +367,18 @@ The team has discussed using [Varnish](https://varnish-cache.org/) in order to r
 
 #### Compression HTML files generated in PHP
 
-[Brotli is a compression algorithm]((https://github.com/google/brotli#introduction)) developed by Google. It might be benefitial for us to switch our compression to Brotli and using gzip as a fallback algorithm. After investigation we found out that compressing assets using Brotli might lead to significant reduction in filesize. In addition to this, we are thinking of PHP compression and stripping away comments and how to make use of long term caching for our assets, using more fine-grained service workers in order to save us time used on the main thread.
-
+[Brotli is a compression algorithm]((https://github.com/google/brotli#introduction)) developed by Google. It might be beneficial for us to switch our compression to Brotli and using gzip as a fallback algorithm. After investigation we found out that compressing assets using Brotli might lead to significant reduction in filesize. In addition to this, we are thinking of PHP compression and stripping away comments and how to make use of long term caching for our assets, using more fine-grained service workers in order to save us time used on the main thread.
 
 #### Convert our Landing Page to React
 
-One thing that throttles down First Meaningful Paint is the fact that our application is partly in React, Vue and Client-Sided frameworks, while our landing page is server-side. By converting the landing page to Client-Side, we would be able to follow best practises more in depth and gradually load content to the user following the [PRPL pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern/).
+One thing that throttles down First Meaningful Paint is the fact that our application is partly in React, Vue and client-side frameworks, while our landing page is server-side. By converting the landing page to client-side, we would be able to follow best practices more in depth and gradually load content to the user following the [PRPL pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern/).
 
 
 ### Summary
 
-After spending some time trying to optimize our application, a lot of work was used in gathering information about best practises. Performance is well documented, but it might be harder in practise for different of reasons. Sometimes it is because your infrastructure isn't suited for a given optimization, and sometimes it might be a bottleneck optimization.
+After spending some time trying to optimize our application, a lot of work was used in gathering information about best practices. Performance is well documented, but it might be harder in practise for different of reasons. Sometimes it is because your infrastructure isn't suited for a given optimization, and sometimes it might be a bottleneck optimization.
 
-Fully configuring a site to follow best performance practise takes time, albeit it is worth investing time adding libraries that give you performance wins with "little-to-no hazzle". 
+Fully configuring a site to follow best performance practise takes time, although it is worth investing time adding libraries that give you performance wins with little-to-no hassle.
 
 
 ### Resources and Related Links   
@@ -398,4 +396,3 @@ Fully configuring a site to follow best performance practise takes time, albeit 
 - https://jeremenichelli.io/2018/07/font-loading-strategy-single-page-applications/
 - https://github.com/jeremenichelli/font-strategy-single-page-app/blob/master/src/font.js
 - https://support.cloudflare.com/hc/en-us/articles/200168056-What-does-Rocket-Loader-do-
-
