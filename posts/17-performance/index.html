@@ -1,0 +1,256 @@
+<p>When shifting one of our applications towards client-side rendering from server-side, performance became important. With server-side rendering, there was no thought around how the user perceived our application.</p><p>Since then, we have moved towards a client-side approach to make user experience better. The stack is now using ReactJS, Laravel and VueJS. The mixture between a server-side library and two client-side libraries, made it reasonable to think that the application had opportunities to improve.</p><p>When developing applications, many developers think that performance is a field of its own. It certainly is, and the majority of the time a developer spends on performance isn&#39;t necessarily around making optimizations. That being said, some of the optimizations we had were already in reach. Libraries themselves had embedded production settings.</p><p>To build our entire application, we use a combination of webpack, (PHP) composer and gulp. We chose webpack because it is stable. The tool is useful for optimizing code and abstracting source code into smaller pieces of code (chunks). To build global stylesheets, webpack wasn&#39;t as useful as gulp is. In addition to these two, a part of our stack is written in <a href="https://laravel.com/">Laravel</a>, which would need to use our generated chunks and CSS.</p><h4 id=performance-budgets>Performance budgets</h4><p>With no prior work on performance, we did not have a estimated budget. When starting to optimize your application, an estimated bundle size and a goal to work towards is important. Not is it only motivational, but it also gives an indication of how small the application needs to be in order to be fast. U.S Web design system has a <a href="https://designsystem.digital.gov/performance/how/">primer website</a> to get you started with perf budgets that makes sense.</p><h4 id=lighthouse-performance-analyzer-tools>Lighthouse, Performance Analyzer Tools</h4><p><a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a> has helped the team to find out where performance optimizations were needed. It provided us insight on where and how to improve and has been a helpful tool for us. Another great resource is the opportunity to analyze generated JavaScript files - commonly referred to as bundles. By using <a href=https://github.com/webpack-contrib/webpack-bundle-analyzer#webpack-bundle-analyzer>webpack-bundle-analyzer</a> we found duplicate code that we could have abstracted to chunks containing this code.</p><p>We also used <a href="https://webpagetest.org/">webpagetest</a> to measure speed index and general website stats in order to get an estimate of our performance budget. Snapshots of things like First Meaningful Paint and Time To First Byte became a valueable label for our measurements.</p><h4 id=lazy-and-dynamically-loading-components-and-routes>Lazy and dynamically loading components and routes</h4><p>Route based loading made it easier for us to provide a user interface that was friendly with respect to performance. By showing a loading spinner while the route component was fetching, we were able to reduce amount of code shipped to the user. We made use of a library in React, <a href=https://github.com/jamiebuilds/react-loadable><code>react-lodable</code></a>.</p><pre><code class="hljs js">import React from <span class=hljs-string>'react'</span>;
+import ReactDOM from <span class=hljs-string>'react-dom'</span>;
+import Loadable from <span class=hljs-string>'react-loadable'</span>;
+
+import FidgetSpinner from <span class=hljs-string>'./spinner'</span>;
+import Landing from <span class=hljs-string>'./landing'</span>;
+
+<span class=hljs-keyword>const</span> mountNode = <span class=hljs-built_in>document</span>.getElementById(<span class=hljs-string>'mypages'</span>);
+
+<span class=hljs-keyword>const</span> LoadableComponent = Loadable({
+    loader: () =&gt; import(<span class=hljs-string>'./auth'</span>),
+    loading: FidgetSpinner
+});
+
+ReactDOM.render(<span class=xml><span class=hljs-tag>&lt;<span class=hljs-title>LoadableComponent</span> /&gt;</span>, mountNode);</span></code></pre><h4 id=managing-non-js-frameworks-with-chunk-splitting>Managing non-JS frameworks with chunk splitting</h4><p>Making sure that a PHP library complies with a JavaScript library wasn&#39;t as hard as one might think. The major blocker when using a PHP library with a JavaScript library was to make sure that performance wasn&#39;t suffering. A hybrid application, using server-side rendering and client-side rendering has the potential to scale well if done right.</p><p>That might sound easy, but it wasn&#39;t. An issue we faced early was using webpack with chunk splitting to save loading times for assets compiled in JavaScript. Laravel has a built-in library named laravel-mix, which did the same thing as webpack-manifest-plugin. The difference between the two is not that much, with the execption being Laravel setting defaults and a near production ready configuration. Laravel mix is easy to implement, but it does not scale well with advanced builds where you would want full control over resource management. Both libraries supported a key to value pair, mapping a bundle name to a hash for a new bundle, which is what we were trying to do.</p><p>Webpack as a stand alone build tool was preferable. For instance, Laravel used an older version of webpack (v3). Webpack v4 had some major performance improvements and that alone was a reason to make a custom build step for us. Laravel didn&#39;t allow Service Workers either, so offline first websites would have been harder to implement without having a direct access to a webpack configuration to set plugins and modifying assets.</p><p>When auditing performance using Lighthouse, the tradeoff between server response and Time To First Byte is essential. In our application, we did not render the landing page on the client-side, which would mean that performance and following the PRPL pattern did not follow best practice for performance.</p><p>This being said, switching to a hybrid application made room for us to gradually turn towards a more client-sided infrastructure while keeping performance within our performance budget. That is why performance budgets are good: they help to limit your team to a goal that is not impossible. It may have been that our technology stack, which contains some legacy, wasn&#39;t ideally suited for some optimizations. An application with a different stack might have had a better starting point than ours.</p><h4 id=font-css-image-loading>Font, CSS &amp; Image loading</h4><p>By gradually loading fonts without blocking the rendering path, performance optimizations were made. Previously, all of our fonts blocked the rendering path with no fallback font. That is bad user experience.</p><p>By using <code>font-observer</code> we appended a className to display the fonts once they were done downloading. One major blocker for us was that our React Components had local font-families declared, and there seems like it&#39;s no obvious way of working around that issue without using some variation of a context manager. To learn more about font loading and how, <a href=https://github.com/bramstein/fontfaceobserver>here&#39;s a reference</a>.</p><h4 id=css-optimizations>CSS optimizations</h4><p>When optimizing CSS, we made sure that we used built-in optimizations for CSS. Webpack and its plugins had built-in performance. Webpack 4 has a plugin named <code>mini-css-extract-plugin</code>, which makes it possible for us to convert SCSS back to CSS files.</p><h4 id=offline-first-and-workbox>Offline first and Workbox</h4><p>We decided to cache JavaScript and CSS files using <a href="https://developers.google.com/web/tools/workbox/">workbox</a>. This was relatively easy and we got a simple service worker up quite quickly.</p><h4 id=upgrading-babel-and-polyfills>Upgrading Babel and polyfills</h4><p>Babel is a great tool and has done great with respect to developer experience lately. We were able to add concepts like browser support (through polyfills) and tree shaking, with the hardest thing being to install the correct dependency. With a fully-configured front-end build, we ended up with these babel packages:</p><pre><code class="hljs json">{
+    "<span class=hljs-attribute>@babel/core</span>": <span class=hljs-value><span class=hljs-string>"^7.0.0-beta.51"</span></span>,
+    "<span class=hljs-attribute>@babel/preset-env</span>": <span class=hljs-value><span class=hljs-string>"^7.0.0-beta.51"</span></span>,
+    "<span class=hljs-attribute>@babel/preset-react</span>": <span class=hljs-value><span class=hljs-string>"^7.0.0-beta.51"</span></span>,
+    "<span class=hljs-attribute>babel-core</span>": <span class=hljs-value><span class=hljs-string>"^7.0.0-bridge.0"</span></span>,
+    "<span class=hljs-attribute>babel-jest</span>": <span class=hljs-value><span class=hljs-string>"^23.2.0"</span></span>,
+    "<span class=hljs-attribute>babel-loader</span>": <span class=hljs-value><span class=hljs-string>"^8.0.0-beta.4"</span></span>,
+    "<span class=hljs-attribute>babel-plugin-syntax-dynamic-import</span>": <span class=hljs-value><span class=hljs-string>"^6.18.0"</span></span>,
+    "<span class=hljs-attribute>babel-preset-minify</span>": <span class=hljs-value><span class=hljs-string>"^0.5.0-alpha.a24dd066"</span>
+</span>}</code></pre><p><code>.babelrc</code></p><pre><code class="hljs json">{
+  "<span class=hljs-attribute>presets</span>": <span class=hljs-value>[[<span class=hljs-string>"@babel/preset-env"</span>, {
+    "<span class=hljs-attribute>modules</span>": <span class=hljs-value><span class=hljs-literal>false</span></span>,
+    "<span class=hljs-attribute>useBuiltIns</span>": <span class=hljs-value><span class=hljs-string>"usage"</span>
+  </span>}], <span class=hljs-string>"@babel/react"</span>]</span>,
+  "<span class=hljs-attribute>env</span>": <span class=hljs-value>{
+    "<span class=hljs-attribute>test</span>": <span class=hljs-value>{
+      "<span class=hljs-attribute>presets</span>": <span class=hljs-value>[[<span class=hljs-string>"@babel/preset-env"</span>], <span class=hljs-string>"@babel/react"</span>]
+    </span>}</span>,
+    "<span class=hljs-attribute>production</span>": <span class=hljs-value>{
+      "<span class=hljs-attribute>presets</span>": <span class=hljs-value>[<span class=hljs-string>"minify"</span>]
+    </span>}
+  </span>}</span>,
+  "<span class=hljs-attribute>plugins</span>": <span class=hljs-value>[<span class=hljs-string>"syntax-dynamic-import"</span>, <span class=hljs-string>"react-hot-loader/babel"</span>]
+</span>}</code></pre><p>Our webpack configuration ended up (roughly) like this:</p><p><code>webpack.base.js</code></p><pre><code class="hljs js"><span class=hljs-keyword>const</span> webpack = <span class=hljs-built_in>require</span>(<span class=hljs-string>'webpack'</span>);
+<span class=hljs-keyword>const</span> ManifestPlugin = <span class=hljs-built_in>require</span>(<span class=hljs-string>'webpack-manifest-plugin'</span>);
+<span class=hljs-keyword>const</span> MiniCssExtractPlugin = <span class=hljs-built_in>require</span>(<span class=hljs-string>'mini-css-extract-plugin'</span>);
+<span class=hljs-keyword>const</span> WorkboxPlugin = <span class=hljs-built_in>require</span>(<span class=hljs-string>'workbox-webpack-plugin'</span>);
+<span class=hljs-keyword>const</span> { join } = <span class=hljs-built_in>require</span>(<span class=hljs-string>'path'</span>);
+<span class=hljs-keyword>const</span> CopyWebpackPlugin = <span class=hljs-built_in>require</span>(<span class=hljs-string>'copy-webpack-plugin'</span>);
+<span class=hljs-keyword>const</span> VueLoaderPlugin = <span class=hljs-built_in>require</span>(<span class=hljs-string>'vue-loader/lib/plugin'</span>);
+
+<span class=hljs-built_in>module</span>.exports = {
+    entry: [<span class=hljs-comment>/* ... */</span>],
+    output: {
+        filename: <span class=hljs-string>'[name].js'</span>,
+        chunkFilename: <span class=hljs-string>'[contenthash].js'</span>,
+        path: join(__dirname, <span class=hljs-string>'dist'</span>),
+        publicPath: <span class=hljs-string>'/'</span>
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                main: {
+                    name: <span class=hljs-string>'main'</span>,
+                    chunks: <span class=hljs-string>'initial'</span>,
+                    minChunks: <span class=hljs-number>2</span>,
+                    maxInitialRequests: <span class=hljs-number>5</span>
+                },
+                vendor: {
+                    test: <span class=hljs-regexp>/node_modules/</span>,
+                    name: <span class=hljs-string>'vendor'</span>,
+                    priority: <span class=hljs-number>10</span>,
+                    enforce: <span class=hljs-literal>true</span>
+                }
+            }
+        }
+    },
+    target: <span class=hljs-string>'web'</span>,
+    <span class=hljs-built_in>module</span>: {
+        rules: [
+            {
+                test: <span class=hljs-regexp>/\.(jpg|png|gif|svg)$/</span>,
+                loader: <span class=hljs-string>'image-webpack-loader'</span>,
+                enforce: <span class=hljs-string>'pre'</span>
+            },
+            {
+                test: <span class=hljs-regexp>/\.(jpe?g|png)$/</span>,
+                use: [
+                    {
+                        loader: <span class=hljs-string>'url-loader'</span>,
+                        options: {
+                            limit: <span class=hljs-number>10</span> * <span class=hljs-number>1024</span>
+                        }
+                    },
+                    {
+                        loader: <span class=hljs-string>'file-loader'</span>,
+                        options: {
+                            name: <span class=hljs-string>'[path][name].[ext]'</span>
+                        }
+                    }
+                ]
+            },
+            {
+                test: <span class=hljs-regexp>/\.css$|sass$|\.scss$/</span>,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader
+                    },
+                    {
+                        loader: <span class=hljs-string>'css-loader'</span>,
+                        options: {
+                            minimize: <span class=hljs-literal>true</span>
+                        }
+                    },
+                    { loader: <span class=hljs-string>'postcss-loader'</span> },
+                    { loader: <span class=hljs-string>'sass-loader'</span> }
+                ]
+            },
+
+            {
+                test: <span class=hljs-regexp>/\.(jpe?g|png)$/</span>,
+                use: [
+                    {
+                        loader: <span class=hljs-string>'url-loader'</span>,
+                        options: {
+                            limit: <span class=hljs-number>10</span> * <span class=hljs-number>1024</span>
+                        }
+                    },
+                    {
+                        loader: <span class=hljs-string>'file-loader'</span>,
+                        options: {
+                            name: <span class=hljs-string>'[path][name].[ext]'</span>
+                        }
+                    }
+                ]
+            },
+            {
+                test: <span class=hljs-regexp>/\.svg$/</span>,
+                use: [
+                    {
+                        loader: <span class=hljs-string>'svg-inline-loader'</span>,
+                        options: {
+                            limit: <span class=hljs-number>10</span> * <span class=hljs-number>1024</span>,
+                            noquotes: <span class=hljs-literal>true</span>
+                        }
+                    },
+                    {
+                        loader: <span class=hljs-string>'url-loader'</span>,
+                        options: {
+                            limit: <span class=hljs-number>10</span> * <span class=hljs-number>1024</span>
+                        }
+                    },
+                    {
+                        loader: <span class=hljs-string>'file-loader'</span>,
+                        options: {
+                            name: <span class=hljs-string>'[path][name].[ext]'</span>
+                        }
+                    }
+                ]
+            },
+
+            {
+                test: <span class=hljs-regexp>/\.vue$/</span>,
+                loader: <span class=hljs-string>'vue-loader'</span>
+            },
+            {
+                test: <span class=hljs-regexp>/\.js$/</span>,
+                exclude: <span class=hljs-regexp>/(node_modules|bower_components)/</span>,
+                use: {
+                    loader: <span class=hljs-string>'babel-loader'</span>
+                }
+            },
+            {
+                test: <span class=hljs-built_in>require</span>.resolve(<span class=hljs-string>'jquery'</span>),
+                use: [
+                    {
+                        loader: <span class=hljs-string>'expose-loader'</span>,
+                        options: <span class=hljs-string>'jQuery'</span>
+                    },
+                    {
+                        loader: <span class=hljs-string>'expose-loader'</span>,
+                        options: <span class=hljs-string>'window.$'</span>
+                    },
+                    {
+                        loader: <span class=hljs-string>'expose-loader'</span>,
+                        options: <span class=hljs-string>'$'</span>
+                    },
+                    {
+                        loader: <span class=hljs-string>'expose-loader'</span>,
+                        options: <span class=hljs-string>'jquery'</span>
+                    },
+                    {
+                        loader: <span class=hljs-string>'expose-loader'</span>,
+                        options: <span class=hljs-string>'window.jQuery'</span>
+                    },
+                    {
+                        loader: <span class=hljs-string>'expose-loader'</span>,
+                        options: <span class=hljs-string>'window.jquery'</span>
+                    }
+                ]
+            }
+        ]
+    },
+    plugins: [
+        <span class=hljs-keyword>new</span> WorkboxPlugin.GenerateSW({
+            swDest: <span class=hljs-string>'service-worker.js'</span>,
+            clientsClaim: <span class=hljs-literal>true</span>,
+            skipWaiting: <span class=hljs-literal>true</span>
+        }),
+        <span class=hljs-keyword>new</span> MiniCssExtractPlugin({
+            filename: <span class=hljs-string>'[name].css'</span>
+        }),
+        <span class=hljs-keyword>new</span> VueLoaderPlugin(),
+        <span class=hljs-keyword>new</span> webpack.ProvidePlugin({
+            $: <span class=hljs-string>'jquery'</span>,
+            jQuery: <span class=hljs-string>'jquery'</span>,
+            Popper: [<span class=hljs-string>'popper.js'</span>, <span class=hljs-string>'default'</span>],
+            Util: <span class=hljs-string>'exports-loader?Util!bootstrap/js/dist/util'</span>
+        }),
+        <span class=hljs-keyword>new</span> webpack.ContextReplacementPlugin(<span class=hljs-regexp>/moment[\/\\]locale$/</span>, <span class=hljs-regexp>/en-gb/</span>),
+        <span class=hljs-keyword>new</span> ManifestPlugin({
+            writeToFileEmit: <span class=hljs-literal>true</span>,
+        })
+    ],
+    resolve: {
+        extensions: [<span class=hljs-string>'*'</span>, <span class=hljs-string>'.js'</span>, <span class=hljs-string>'.vue'</span>, <span class=hljs-string>'.json'</span>, <span class=hljs-string>'.css'</span>, <span class=hljs-string>'.scss'</span>],
+        alias: {
+            vue$: <span class=hljs-string>'vue/dist/vue.esm.js'</span>
+        }
+    }
+};</code></pre><p><code>webpack.prod.js</code></p><pre><code class="hljs js"><span class=hljs-keyword>const</span> webpack = <span class=hljs-built_in>require</span>(<span class=hljs-string>'webpack'</span>);
+<span class=hljs-keyword>const</span> CleanWebpackPlugin = <span class=hljs-built_in>require</span>(<span class=hljs-string>'clean-webpack-plugin'</span>);
+<span class=hljs-keyword>const</span> merge = <span class=hljs-built_in>require</span>(<span class=hljs-string>'webpack-merge'</span>);
+<span class=hljs-keyword>const</span> webpackConfig = <span class=hljs-built_in>require</span>(<span class=hljs-string>'./webpack.base'</span>);
+<span class=hljs-keyword>const</span> UglifyJsPlugin = <span class=hljs-built_in>require</span>(<span class=hljs-string>'uglifyjs-webpack-plugin'</span>);
+<span class=hljs-keyword>const</span> MiniCssExtractPlugin = <span class=hljs-built_in>require</span>(<span class=hljs-string>'mini-css-extract-plugin'</span>);
+<span class=hljs-keyword>const</span> OptimizeCSSAssetsPlugin = <span class=hljs-built_in>require</span>(<span class=hljs-string>'optimize-css-assets-webpack-plugin'</span>);
+
+<span class=hljs-built_in>module</span>.exports = merge(webpackConfig, {
+    mode: <span class=hljs-string>'production'</span>,
+    output: {
+        filename: <span class=hljs-string>'[name].js'</span>,
+        chunkFilename: <span class=hljs-string>'[chunkhash].js'</span>
+    },
+    plugins: [
+        <span class=hljs-keyword>new</span> CleanWebpackPlugin([<span class=hljs-string>'public'</span>]),
+        <span class=hljs-keyword>new</span> MiniCssExtractPlugin({
+            filename: <span class=hljs-string>'[id].[hash].css'</span>,
+            chunkFilename: <span class=hljs-string>'[id].[hash].css'</span>
+        })
+    ],
+    optimization: {
+        minimizer: [
+            <span class=hljs-keyword>new</span> UglifyJsPlugin({
+                cache: <span class=hljs-literal>true</span>,
+                parallel: <span class=hljs-number>4</span>,
+                sourceMap: <span class=hljs-literal>false</span>
+            }),
+            <span class=hljs-keyword>new</span> OptimizeCSSAssetsPlugin()
+        ]
+    }
+});</code></pre><h4 id=machine-learning-and-beyond>Machine Learning and beyond</h4><p>We are experimenting with intelligent fetching of assets using <a href="https://blog.mgechev.com/2018/05/09/introducing-guess-js-data-driven-user-experiences-web/">GuessJS</a>. It will allow us to load routes that we are confident a user will visit based on data from Google Analytics.</p><h4 id=chunk-splitting>Chunk splitting</h4><p>We didn&#39;t quite get chunk splitting to work, as our application is written in PHP. Each of the initial chunks needs to be included as a script in the index.php file. It turns out that chunk splitting with the default rules didn&#39;t help us that much.</p><h4 id=shorter-css-class-names>Shorter CSS class names</h4><p>As length of CSS classes might be large, one way to ensure that the CSS file remains slim is to audit CSS using the coverage tab in chrome and to shorten class and ID names.</p><h4 id=using-varnish-to-cache-requests>Using Varnish to cache requests</h4><p>The team has discussed using <a href="https://varnish-cache.org/">Varnish</a> in order to reduce requests in PHP.</p><h4 id=compression-html-files-generated-in-php>Compression HTML files generated in PHP</h4><p><a href=(https://github.com/google/brotli#introduction>Brotli is a compression algorithm</a>) developed by Google. It might be beneficial for us to switch our compression to Brotli and using gzip as a fallback algorithm. After investigation we found out that compressing assets using Brotli might lead to significant reduction in filesize. In addition to this, we are thinking of PHP compression and stripping away comments and how to make use of long term caching for our assets, using more fine-grained service workers in order to save us time used on the main thread.</p><h4 id=convert-our-landing-page-to-react>Convert our Landing Page to React</h4><p>One thing that throttles down First Meaningful Paint is the fact that our application is partly in React, Vue and client-side frameworks, while our landing page is server-side. By converting the landing page to client-side, we would be able to follow best practices more in depth and gradually load content to the user following the <a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/">PRPL pattern</a>.</p><h3 id=summary>Summary</h3><p>After spending some time trying to optimize our application, a lot of work was used in gathering information about best practices. Performance is well documented, but it might be harder in practise for different of reasons. Sometimes it is because your infrastructure isn&#39;t suited for a given optimization, and sometimes it might be a bottleneck optimization.</p><p>Fully configuring a site to follow best performance practise takes time, although it is worth investing time adding libraries that give you performance wins with little-to-no hassle.</p><h3 id=resources-and-related-links>Resources and Related Links</h3><ul><li><a href="https://designsystem.digital.gov/performance/how/">https://designsystem.digital.gov/performance/how/</a></li><li><a href=https://httpd.apache.org/docs/trunk/mod/mod_brotli.html>https://httpd.apache.org/docs/trunk/mod/mod_brotli.html</a></li><li><a href="https://webpagetest.org/">https://webpagetest.org/</a></li><li><a href=https://v8project.blogspot.com/2015/07/code-caching.html>https://v8project.blogspot.com/2015/07/code-caching.html</a></li><li><a href=https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0>https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0</a></li><li><a href=https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4>https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4</a></li><li><a href=https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154>https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154</a></li><li><a href=https://github.com/thedaviddias/Front-End-Performance-Checklist#html>https://github.com/thedaviddias/Front-End-Performance-Checklist#html</a></li><li><a href=https://murze.be/using-varnish-on-a-laravel-forge-provisioned-server>https://murze.be/using-varnish-on-a-laravel-forge-provisioned-server</a></li><li><a href="https://michalzalecki.com/optimize-react-build-for-production-with-webpack/">https://michalzalecki.com/optimize-react-build-for-production-with-webpack/</a></li><li><a href="https://jeremenichelli.io/2018/07/font-loading-strategy-single-page-applications/">https://jeremenichelli.io/2018/07/font-loading-strategy-single-page-applications/</a></li><li><a href=https://github.com/jeremenichelli/font-strategy-single-page-app/blob/master/src/font.js>https://github.com/jeremenichelli/font-strategy-single-page-app/blob/master/src/font.js</a></li><li><a href=https://support.cloudflare.com/hc/en-us/articles/200168056-What-does-Rocket-Loader-do->https://support.cloudflare.com/hc/en-us/articles/200168056-What-does-Rocket-Loader-do-</a></li></ul>
