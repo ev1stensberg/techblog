@@ -4,12 +4,12 @@ title: "From O(4G) to O(ffline) - Lessons learned from performance"
 description: >
     One of our applications was slow, so we decided to invest time in performance.
 date: 2018-08-09
-author: Even Stensberg
+author: Even Stensberg, Alex York
 tags: FrontEnd, Performance
 excerpt_separator: <!--more-->
 ---
 
-When  shifting one of our applications towards client-side rendering from server-side, performance became important. With server-side rendering, there was no thought around how the user percieved our application.
+When  shifting one of our applications towards client-side rendering from server-side, performance became important. With server-side rendering, there was no thought around how the user perceived our application.
 
 Since then, we have moved towards a client-side approach to make user experience better. The stack is now using ReactJS, Laravel and VueJS. The mixture between a server-side library and two client-side libraries, made it reasonable to think that the application had opportunities to improve.
  
