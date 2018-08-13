@@ -3,8 +3,10 @@ template: post.html
 title: "From O(4G) to O(ffline) - Lessons learned from performance"
 description: >
     One of our applications was slow, so we decided to invest time in performance.
-date: 2018-08-09
-author: Even Stensberg, Alex York
+date: 2018-08-13
+author: 
+	- Even Stensberg 
+	- Alex York
 tags: FrontEnd, Performance
 excerpt_separator: <!--more-->
 ---
